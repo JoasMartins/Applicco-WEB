@@ -1,27 +1,52 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.6px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-default: #5e86ff;
+  --color-default-secundario: #9fb7ff;
+  --color-default-terciario: #2c61ff;
+  --color-title: #fff;
+  --color-subtitle: #fff;
+  --color-text: #e4e4e4;
+  --color-text-dark: #202020;
+  --color-background: #292929;
+  --color-buttonDownload: #161616;
+  --color-discreto: #ffffff94;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  font-size: 62.5%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+main {
+  width: 100%;
+}
+
+main h3 {
+  font-size: 2.5rem;
+  color: var(--color-title);
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main p {
+  color: var(--color-text);
+  top: 10px;
 }
