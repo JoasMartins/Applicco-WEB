@@ -35,4 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/src/appData.json
+src/appData.json
