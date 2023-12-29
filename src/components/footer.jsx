@@ -1,17 +1,37 @@
+'use client'
+
+import Link from "next/link"
 import styles from "./css/Footer.module.css"
 
 export default function Page() {
-    let UltimoCopyright = [2024,10, 8]
-    let year = new Date(UltimoCopyright).getFullYear()
+    let year = new Date().getFullYear()
+
+    function handleRequestService() {
+        window.open("mailto:contato@applicco.com.br?subject=Solicitação de Serviço")
+    }
 
     return <footer>
         <div className={styles.footer}>
-            <div className={styles.logo}>
-                <div>
-                    <img src='applicco-logo.png' alt='Ícone da Agenda Patrus' />
-                    <h1>Applicco</h1>
+            <div className={styles.services}>
+                <div className={styles.logo}>
+                    <div>
+                        <img src='applicco-logo.svg' alt='Ícone da Agenda Patrus' />
+                        <h1>Applicco</h1>
+                    </div>
+                    <p>Aplicativos e Softwares</p>
                 </div>
-                <p>Suas tarefas, sua organização.</p>
+
+                <div className={styles.actions}>
+                    <div>
+                        <p>Solicitar<br />um serviço</p>
+                        <button onClick={handleRequestService}>Clique Aqui</button>
+                    </div>
+                    <div className={styles.barraDivisoriaVertical} />
+                    <div>
+                        <p>Contratar<br />Agenda Aprendize</p>
+                        <Link href={"/agendaaprendize/contratar/form"} style={{ textDecoration: "none" }}><button>Clique Aqui</button></Link>
+                    </div>
+                </div>
             </div>
 
             <div className={styles.contact_dev}>
@@ -21,40 +41,41 @@ export default function Page() {
                     <ul className={styles.key}>
                         <li>Email:</li>
                         <li>Instagram:</li>
-                        <li>Turma:</li>
+                        <li>Portfólio:</li>
                     </ul>
 
 
                     <ul className={styles.value}>
                         <a href='mailto:joasmcarmo@gmail.com?subject=Agenda Patrus&body=' target='_blank'>joasmcarmo@gmail.com</a>
                         <a href='https://www.instagram.com/joas_mc_/' target='_blank'>@joas_mc_</a>
-                        <a>2MB</a>
+                        <Link href={"/portfolio"}><p>Clique para acessar</p></Link>
                     </ul>
                 </div>
             </div>
 
 
             <div className={styles.contact_school}>
-                <h2>Contato<br />da escola</h2>
+                <h2>Sobre<br />Applicco</h2>
                 <div className={styles.barraDivisoriaHorizontal} />
+                <p className={styles.text}>Equipe de desenvolvimento de aplicativos mobile, websites, softwares, APIs e Banco de Dados.</p>
                 <div className={styles.list}>
                     <ul className={styles.key}>
                         <li>Email:</li>
                         <li>Instagram:</li>
-                        <li>Endereço:</li>
                     </ul>
 
                     <ul className={styles.value}>
-                        <a href='mailto:secretaria.patrus@gmail.com?subject=&body=' target='_blank'>secretaria.patrus@gmail.com</a>
-                        <a href='https://www.instagram.com/patrusdesousa/' target='_blank'>@patrusdesousa</a>
-                        <a href='https://www.google.com/maps/dir/-21.6954784,-43.329796/e.+e.+sebastiao+patrus+de+souza/@-21.7167481,-43.3660129,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x989d80dfb541c3:0x71cc1dd30d350e4!2m2!1d-43.361005!2d-21.7425862?entry=ttu' target='_blank'>Abrir em Google Maps</a>
+                        <a href='mailto:contato@applicco.com.br@gmail.com?subject=&body=' target='_blank'>contato@applicco.com.br</a>
+                        <a href='https://www.instagram.com/appliccoapps/' target='_blank'>@appliccoapps</a>
                     </ul>
                 </div>
             </div>
 
-            <div className={styles.creditos}>
-                <p className={styles.dev}>Desenvolvido por <span>Joás M. C.</span> da turma <span>2MB</span>.</p>
-                <p className={styles.love}>Feito com ❤️ para a <span>SPS</span>!</p>
+            <div  className={styles.creditos}>
+                <div>
+                    <p className={styles.dev}>Gerenciado por <span>Joás Martins</span> e <span>Ricardo Oliveira</span>.</p>
+                    <p className={styles.love}>Feito com ❤️ para um <span>futuro</span>!</p>
+                </div>
             </div>
         </div>
 
