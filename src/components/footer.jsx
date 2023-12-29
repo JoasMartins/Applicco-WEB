@@ -24,6 +24,7 @@ export default function Page() {
                         <li>Turma:</li>
                     </ul>
 
+
                     <ul className={styles.value}>
                         <a href='mailto:joasmcarmo@gmail.com?subject=Agenda Patrus&body=' target='_blank'>joasmcarmo@gmail.com</a>
                         <a href='https://www.instagram.com/joas_mc_/' target='_blank'>@joas_mc_</a>
