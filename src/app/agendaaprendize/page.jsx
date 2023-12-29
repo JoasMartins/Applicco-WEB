@@ -1,12 +1,15 @@
 'use client'
  
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import appData from "../../appData.json"
 import "./style.css"
 
 function Index() {
+
+    const router = useRouter()
 
     const handleDownload = () => {
         const apkFileName = appData.apkname;
@@ -19,7 +22,8 @@ function Index() {
     };
 
     const handleHire = () => {
-        window.location.href = "/contratar"
+        //window.location.href = "/agendaaprendize/contratar"
+        router.push("/agendaaprendize/contratar")
     }
 
     return (
@@ -56,7 +60,7 @@ function Index() {
                                     <div className='barraDivisoria' />
                                     <p>Baixar</p>
                                 </button>
-                                <p className='text1'>Download indiponível!</p>
+                                <p className='text1'>Download indisponível!</p>
                                 <p className='text2'>Aplicativo ainda não foi lançado.</p>
                             </div>
                         </div>

@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
 
 * {
-  font-family: 'Rubik', sans-serif;
+  /*font-family: 'Rubik', sans-serif;*/
   letter-spacing: 0.6px;
   margin: 0;
   padding: 0;
@@ -20,12 +19,38 @@
   --color-background: #292929;
   --color-buttonDownload: #161616;
   --color-discreto: #ffffff94;
+
+  --color-1: #9fb7ff;
+  --color-2: #4071ff;
+  --color-3: #073ace;
+  --color-4: #23347C;
+  --color-5: #111C49;
+  --color-background: #292929;
+  --color-text-1: #fafafa;
+  --color-text-2: #e4e4e4;
+  --color-text-3: #ffffff94;
+  --color-text-4: #64646494;
+  --color-text-5: #202020;
+  --color-text-6: #161616;
 }
 
 html {
   font-size: 62.5%;
+  scrollbar-width: thin;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #0f0f0f;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-2);    /* color of the scroll thumb */
+  border-radius: 2px;       /* roundness of the scroll thumb */
+}
 
 .App {
   display: flex;
