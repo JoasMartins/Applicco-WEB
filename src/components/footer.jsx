@@ -32,6 +32,7 @@ export default function Page() {
                 </div>
             </div>
 
+
             <div className={styles.contact_school}>
                 <h2>Contato<br />da escola</h2>
                 <div className={styles.barraDivisoriaHorizontal} />
