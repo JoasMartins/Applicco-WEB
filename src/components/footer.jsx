@@ -72,7 +72,7 @@ export default function Page() {
             </div>
 
             <div  className={styles.creditos}>
-                <div>
+                <div className={styles.box}>
                     <p className={styles.dev}>Gerenciado por <span>Joás Martins</span> e <span>Ricardo Oliveira</span>.</p>
                     <p className={styles.love}>Feito com ❤️ para um <span>futuro</span>!</p>
                 </div>

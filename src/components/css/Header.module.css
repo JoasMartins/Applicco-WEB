@@ -45,3 +45,11 @@
     color: #fff;
 
 }
+
+.style .nav .requestService {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.style .nav .requestService:hover {
+    background-color: var(--color-2);
+}

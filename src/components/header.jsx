@@ -4,6 +4,7 @@ import styles from "./css/Header.module.css"
 import Link from "next/link"
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import { DropdownItemText } from "react-bootstrap";
 import DropdownItem from 'react-bootstrap/DropdownItem'
 import { useRouter } from "next/navigation";
 
@@ -12,6 +13,10 @@ export default function Page() {
 
     function handleAgendaAprendize() {
         router.push("/agendaaprendize")
+    }
+
+    function handleRequestService() {
+        window.open("mailto:contato@applicco.com.br?subject=Solicitação de Serviço")
     }
 
     return (<header className={styles.style}>
@@ -23,16 +28,16 @@ export default function Page() {
 
         <nav className={styles.nav}>
             <DropdownButton id="dropdown-projects" title="Projetos">
+                <DropdownItemText>Públicos</DropdownItemText>
                 <DropdownItem onClick={handleAgendaAprendize}>Agenda Aprendize</DropdownItem>
+                <DropdownItemText>Estudos e Treinamentos</DropdownItemText>
             </DropdownButton>
 
             <Link href="/portfolio" style={{textDecoration: "none"}}>
                 <button>Porfólio</button>
             </Link>
 
-            <Link href="/" style={{textDecoration: "none"}}>
-                <button>Solicitar serviço</button>
-            </Link>
+            <button className={styles.requestService} onClick={handleRequestService}>Solicitar serviço</button>
 
 
         </nav>

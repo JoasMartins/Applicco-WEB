@@ -1,0 +1,31 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+.main .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .box div {
+    min-width: 40vw;
+}
+
+.main img {
+    height: 50vh;
+}
+
+.main h1 {
+    color: var(--color-text-1);
+    font-size: 80px;
+}
+
+.main p {
+    color: var(--color-text-3);
+    font-size: 18px;
+}

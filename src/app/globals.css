@@ -62,6 +62,7 @@ body::-webkit-scrollbar-thumb {
 
 main {
   width: 100%;
+  min-height: 89vh;
 }
 
 main h3 {

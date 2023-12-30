@@ -1,0 +1,44 @@
+.main {
+    
+}
+
+.main .header {
+    background-color: var(--color-background-2);
+    padding: 80px 200px;
+    display: flex;
+}
+
+.main .header h1 {
+    color: var(--color-text-5);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.main .header h2 {
+    color: var(--color-text-4);
+    width: 60%;
+    font-size: 24px;
+}
+
+.main .header p {
+    color: var(--color-text-4);
+    width: 50%;
+    font-size: 14px;
+}
+
+
+.main img {
+    height: 440px;
+}
+
+.main .header button {
+    all: unset;
+    position: relative;
+    transform: translateY(-250%);
+    background-color: red;
+}
+
+.main .projectAA {
+    background-color: var(--color-background);
+    padding: 100px;
+}
