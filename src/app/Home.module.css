@@ -2,6 +2,10 @@
     
 }
 
+.main h1, .main h2, .main h3, .main p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .main .header {
     background-color: var(--color-background-2);
     padding: 80px 200px;
@@ -14,14 +18,16 @@
     font-weight: bold;
 }
 
+
+
 .main .header h2 {
-    color: var(--color-text-4);
+    color: #4b4b4b;
     width: 60%;
     font-size: 24px;
 }
 
 .main .header p {
-    color: var(--color-text-4);
+    color: #5e5e5e;
     width: 50%;
     font-size: 14px;
 }
@@ -34,11 +40,97 @@
 .main .header button {
     all: unset;
     position: relative;
-    transform: translateY(-250%);
-    background-color: red;
+    transform: translateY(-220%);
+    background-color: var(--color-3);
+    padding: 10px;
+    color: var(--color-text-1);
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7.5px;
+    border: 2px solid var(--color-1);
+    transition: all 0.3s;
+    cursor: pointer;
 }
+
+.main .header button:hover {
+    background-color: var(--color-1);
+    color: #000;
+    border: 2px solid var(--color-2);
+}
+
+
+
+
 
 .main .projectAA {
     background-color: var(--color-background);
     padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .projectAA div {
+    width: 50%;
+}
+
+.main .projectAA .buttonArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .projectAA h2 {
+    color: var(--color-text-1);
+    font-size: 35px;
+}
+
+.main .projectAA p {
+    color: var(--color-text-3);
+    font-size: 15px;
+}
+
+
+.main .projectAA button {
+    all: unset;
+    background-color: var(--color-3);
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--color-text-1);
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    border: 3px solid var(--color-2);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+
+.main .projectAA button:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*===================================================*/
+
+
+.main .about {
+    background-color: var(--color-2);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .about h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main .about p {
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+    color: var(--color-text-2);
 }

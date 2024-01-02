@@ -1,9 +1,12 @@
+'use client'
+import Link from "next/link"
 import styles from "./Home.module.css"
 
 export default function Page() {
 
   function handleModalRequestService() {
     //  Abrir um modal onde terá os passos para solicitar um serviço
+    window.open("mailto:contato@applicco.com.br?subject=Solicitação de Serviço")
   }
 
   function ItemList({ name, icon, color }) {
@@ -30,21 +33,30 @@ export default function Page() {
           <p>Somos uma equipe de criação de <span>Websites</span>, <span>Aplicativos Mobile</span>, <span>Chatbots</span> e aquilo que você precisa para revoluncionar o seu negócio.</p>
         </div>
         <div align="center">
-          <div align="center"><img src="/dev-ia.svg"/></div>
-          <div align="center"><button>Solicitar serviço</button></div>
+          <div align="center"><img src="/dev-ia.svg" /></div>
+          <div align="center"><button onClick={handleModalRequestService}>Solicitar serviço</button></div>
         </div>
       </div>
 
       <div className={styles.projectAA}>
-        <h2>Projeto: Agenda Aprendize</h2>
-        <p>Esse é um dos nossos projetos principais e que tem foco auxiliar a gestão das tarefas estudantis de redes escolares. Clique no botão ao lado para saber mais sobre o projeto.</p>
-        <button>Saber mais</button>
+        <div>
+          <h2>Projeto: Agenda Aprendize</h2>
+          <p>Esse é um dos nossos projetos principais e que tem foco auxiliar a gestão das tarefas estudantis de redes escolares. Clique no botão ao lado para saber mais sobre o projeto.</p>
+        </div>
+        <div className={styles.buttonArea}>
+          <Link href={"/agendaaprendize"} style={{textDecoration: "none"}}><button>Saber mais</button></Link>
+        </div>
       </div>
 
-      <div>
+      <div className={styles.about}>
         <h2>Sobre o Applicco</h2>
         <p>Está é uma equipe de desenvolvimento de produtos digitais tanto para empresas, pequenos negócios, projetos pessoais e até serviços públicos. Criamos todo o tipo de produto digital como Websites, Aplicativos Mobile, Softwares, entre tantos outros, tudo exclusivo e da forma que você deseja para o seu projeto ou sua ideia.</p>
       </div>
+
+      {
+        /*
+        
+        //  LIBERAR ESSA PARTE
 
       <div>
         <h2>Projetos Desenvolvidos:</h2>
@@ -103,6 +115,11 @@ export default function Page() {
         <ItemBlock name="NodeJS" icon="" color="" />
         <ItemBlock name="MongoDB" icon="" color="" />
       </div>
+
+              */
+    }
+
+
     </main>
   )
 }

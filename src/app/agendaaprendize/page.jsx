@@ -31,8 +31,8 @@ function Index() {
             <main>
                 <div className='main'>
                     <div className='main_areaTitle'>
-                        <h1 className='main_titleText'>Seja bem-vindo(a) ao<br />Agenda Patrus!</h1>
-                        <h2 className='main_subtitleText'>O aplicativo para organizar seus estudos na E. E. Sebastião Patrus de Souza</h2>
+                        <h1 className='main_titleText'>Seja bem-vindo(a) ao<br />Agenda Aprendize!</h1>
+                        <h2 className='main_subtitleText'>O aplicativo para organizar seus estudos.</h2>
                     </div>
 
                     <div className='areaActions'>
@@ -51,7 +51,8 @@ function Index() {
 
                         <div className='Download'>
                             <div className='texts'>
-                                <h3>Clique no botão ao lado para iniciar o download do App.</h3>
+                                <h2>Aplicativo: Agenda Patrus</h2>
+                                <h3>Esse é o aplicativo do projeto <span>Agenda Aprendize</span> exclusivo e reservado para os alunos da escola <span>E. E. Sebastião Patrus de Souza</span>. Clique no botão ao lado para iniciar o download do App.</h3>
                                 <p>Certifique-se de que nas configurações do seu dispositivo a opção esteja ativada. Não sabe como ativar? <a href='https://www.showmetech.com.br/instalando-aplicativos-android-de-fontes-desconhecidas/' target="_blank" rel="noopener noreferrer">Clique aqui</a>.</p>
                             </div>
                             <div className="alert">
