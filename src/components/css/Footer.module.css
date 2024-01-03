@@ -20,6 +20,7 @@
 .footer .logo {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .footer .logo div {
@@ -85,6 +86,7 @@
   transition: all 0.3s;
   cursor: pointer;
   text-decoration: none;
+  margin-top: 5px;
 }
 
 .footer .actions div button:hover {
@@ -136,8 +138,12 @@
   align-items: end;
   color: #fff;
   font-weight: 500;
-  margin-right: -10px;
+  margin-right: 10px;
   font-size: 1.5rem;
+}
+
+.footer .text {
+  margin-bottom: 5px;
 }
 
 .footer .value a {

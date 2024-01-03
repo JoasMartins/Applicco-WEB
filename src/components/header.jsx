@@ -1,12 +1,14 @@
 'use client'
 
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./css/Header.module.css"
 import Link from "next/link"
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import { DropdownItemText } from "react-bootstrap";
-import DropdownItem from 'react-bootstrap/DropdownItem'
+//import Dropdown from 'react-bootstrap/Dropdown';
+//import DropdownButton from 'react-bootstrap/DropdownButton';
+//import { DropdownItemText } from "react-bootstrap";
+//import DropdownItem from 'react-bootstrap/DropdownItem'
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function Page() {
     const router = useRouter()
@@ -20,20 +22,24 @@ export default function Page() {
     }
 
     return (<header className={styles.style}>
-        <Link href={"/"} style={{textDecoration: "none"}}>
+        <Link href={"/"} style={{ textDecoration: "none" }}>
             <div className={styles.logo}>
                 <h1>App<span>licco</span></h1>
             </div>
         </Link>
 
         <nav className={styles.nav}>
-            <DropdownButton id="dropdown-projects" title="Projetos">
+            {
+                /**
+                 <DropdownButton id="dropdown-projects" title="Projetos">
                 <DropdownItemText>Públicos</DropdownItemText>
                 <DropdownItem onClick={handleAgendaAprendize}>Agenda Aprendize</DropdownItem>
                 <DropdownItemText>Estudos e Treinamentos</DropdownItemText>
             </DropdownButton>
+                 */
+            }
 
-            <Link href="/portfolio" style={{textDecoration: "none"}}>
+            <Link href="/portfolio" style={{ textDecoration: "none" }}>
                 <button>Porfólio</button>
             </Link>
 

@@ -1,4 +1,4 @@
-import styles from "./Not-Found.module.css"
+import styles from "./css/Not-Found.module.css"
 
 export default function Page() {
     return (<main className={styles.main}>

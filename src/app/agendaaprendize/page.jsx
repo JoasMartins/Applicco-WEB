@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import appData from "../../appData.json"
-import "./style.css"
+import "../css/Agendaaprendize.css"
 
 function Index() {
 
