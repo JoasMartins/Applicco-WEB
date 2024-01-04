@@ -7,6 +7,8 @@ import { faDownload, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import appData from "../../appData.json"
 import "../css/Agendaaprendize.css"
 
+import SessionHome from "../../components/SessionHome";
+
 function Index() {
 
     const router = useRouter()
@@ -69,6 +71,38 @@ function Index() {
 
                     <p className='main_text'>Um aplicativo móvel de uso simples com um propósito único: ajudar na organização dos estudos e realização de tarefas da escola. Feito com as funções necessárias para que um aluno possa planejar suas atividades e matérias com antecedência.</p>
                 </div>
+
+                <SessionHome
+                title="APROVADO POR DIRETORES E SECRETÁRIOS"
+                text="Esse projeto foi aplicado na rede escolar E. E. Sebastião Patrus de Souza e obteve a aprovação e elogios da equipe administrativa, secretários e diretores, sem contar com a excelente avaliação de professores e alunos."
+                image="/aprovado.png"
+                color="#5e86ff"
+            />
+
+    
+
+            <SessionHome
+                title="O QUE É O PROJETO?"
+                text="O projeto Agenda Patrus é um aplicativo para celulares criado para reunir várias funções que agregam nos estudos e na gestão da escola."
+                image="/logo192.png"
+                color="#292929"
+                direction="right"
+            />
+
+            <SessionHome
+                title="SOBRE O APLICATIVO"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, aliquid quaerat quis alias amet dignissimos ad expedita optio iste. Eligendi dolore totam blanditiis sapiente saepe eum consequatur recusandae ab."
+                image="/logo192.png"
+                color="#5e86ff"
+            />
+
+            <SessionHome
+                title="TITULO TITULO"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, aliquid quaerat quis alias amet dignissimos ad expedita optio iste. Eligendi dolore totam blanditiis sapiente saepe eum consequatur recusandae ab."
+                image="/logo192.png"
+                color="#292929"
+                direction="right"
+            />
 
                 <div className='main_areaNotify'>
                     <h3 className='main_titleNotify'>Sistema de Notificações</h3>
