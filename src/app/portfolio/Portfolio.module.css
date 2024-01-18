@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+.main h1 {
+    color: var(--color-text-1);
+    font-size: 40px;
+}
+
+.main p {
+    color: var(--color-text-3);
+    font-size: 13px;
+}
+
+.main span {
+    color: var(--color-2);
+    font-weight: bold;
+}

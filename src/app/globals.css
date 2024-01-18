@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  /*font-family: 'Rubik', sans-serif;*/
+  letter-spacing: 0.6px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-default: #5e86ff;
+  --color-default-secundario: #9fb7ff;
+  --color-default-terciario: #2c61ff;
+  --color-title: #fff;
+  --color-subtitle: #fff;
+  --color-text: #e4e4e4;
+  --color-text-dark: #202020;
+  --color-background: #292929;
+  --color-buttonDownload: #161616;
+  --color-discreto: #ffffff94;
+
+  --color-1: #9fb7ff;
+  --color-2: #4071ff;
+  --color-3: #073ace;
+  --color-4: #23347C;
+  --color-5: #111C49;
+  --color-6: #2c61ff;
+  --color-7: #5e86ff;
+  --color-8: #0c1127;
+  --color-background: #292929;
+  --color-background-2: #e2e2e2;
+  --color-text-1: #fafafa;
+  --color-text-2: #e4e4e4;
+  --color-text-3: #ffffff94;
+  --color-text-4: #64646494;
+  --color-text-5: #202020;
+  --color-text-6: #161616;
+}
+
+html {
+  font-size: 62.5%;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #0f0f0f;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-2);    /* color of the scroll thumb */
+  border-radius: 2px;       /* roundness of the scroll thumb */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+main {
+  width: 100%;
+  min-height: 89vh;
+}
+
+main h3 {
+  font-size: 2.5rem;
+  color: var(--color-title);
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main p {
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 320px) {/* MOBILE */
+
+}
+
+@media screen and (max-width: 768px) {/* TABLET */
+
+}
+
+@media screen and (max-width: 1024px) {/* MIN DESKTOP */
+
+}
+
+@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+
+}
