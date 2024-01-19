@@ -39,6 +39,7 @@ export default function Page() {
                  */
             }
 
+<<<<<<< HEAD
             <Link href="/agendaaprendize" style={{ textDecoration: "none" }}>
                 <div style={{marginBottom: 10}}>
                     <p>Projeto:</p>
@@ -53,6 +54,13 @@ export default function Page() {
             </Link>
 
             <button className={styles.requestService} onClick={handleRequestService}><p>Solicitar serviço</p></button>
+=======
+            <Link href="/portfolio" style={{ textDecoration: "none" }}>
+                <button>Porfólio</button>
+            </Link>
+
+            <button className={styles.requestService} onClick={handleRequestService}>Solicitar serviço</button>
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 
 
         </nav>

@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./css/SessionHome.module.css"
+<<<<<<< HEAD
 import Image from "next/image";
 import Badge from "./badge";
 
@@ -7,11 +8,19 @@ export default function SessionHome({ title, text, image, color, direction, cust
     let directImage = "left"
 
     if (direction == "right") {
+=======
+
+export default function SessionHome({ title, text, image, color, direction }) {
+    let directImage = "left"
+
+    if(direction == "right") {
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
         directImage = "row-reverse"
     } else {
         directImage = "row"
     }
 
+<<<<<<< HEAD
     let largura = "35%"
     if(text) {
         text = <p>{text}</p>
@@ -114,10 +123,13 @@ export default function SessionHome({ title, text, image, color, direction, cust
     
     }
 
+=======
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
     return (
         <section className={style.SessionHome} style={{
             backgroundColor: color || "#fff",
             flexDirection: directImage
+<<<<<<< HEAD
         }}>
             <Image alt="Icone sobre o tópico" src={image} width={220} height={220} />
             <div style={{ width: largura }}>
@@ -126,6 +138,13 @@ export default function SessionHome({ title, text, image, color, direction, cust
                     {textBadge ? <Badge text={textBadge} /> : <></>}
                 </div>
                 {text}
+=======
+            }}>
+            <img src={image} />
+            <div>
+                <h3>{title || "UNDEFINED"}</h3>
+                <p>{text || "UNDEFINED"}</p>
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
             </div>
         </section>
     )

@@ -1,6 +1,9 @@
 .SessionHome {
     display: flex;
+<<<<<<< HEAD
     flex-direction: row;
+=======
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
     align-items: center;
     justify-content: space-evenly;
     padding-top: 80px;
@@ -8,6 +11,10 @@
 }
 
 .SessionHome div {
+<<<<<<< HEAD
+=======
+    width: 35%;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
 
 .SessionHome h3 {
@@ -15,6 +22,7 @@
 
 .SessionHome p {
     font-size: 16px;
+<<<<<<< HEAD
 }
 
 .SessionHome .title {
@@ -37,4 +45,6 @@
         display: flex;
         flex-direction: column;
     }
+=======
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }

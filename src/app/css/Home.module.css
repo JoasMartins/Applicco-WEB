@@ -8,13 +8,21 @@
 
 .main .header {
     background-color: var(--color-background-2);
+<<<<<<< HEAD
     padding: 7.5vw;
+=======
+    padding: 80px 200px;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
     display: flex;
 }
 
 .main .header h1 {
     color: var(--color-text-5);
+<<<<<<< HEAD
     font-size: 6vw;
+=======
+    font-size: 60px;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
     font-weight: bold;
 }
 
@@ -22,15 +30,24 @@
 
 .main .header h2 {
     color: #4b4b4b;
+<<<<<<< HEAD
     width: 80%;
+=======
+    width: 60%;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
     font-size: 24px;
 }
 
 .main .header p {
     color: #5e5e5e;
+<<<<<<< HEAD
     width: 90%;
     margin-top: 40px;
     font-size: 18px;
+=======
+    width: 50%;
+    font-size: 14px;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
 
 
@@ -66,21 +83,32 @@
 
 .main .projectAA {
     background-color: var(--color-background);
+<<<<<<< HEAD
     padding: 7.5vw;
+=======
+    padding: 100px;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .main .projectAA div {
+<<<<<<< HEAD
     width: 70%;
+=======
+    width: 50%;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
 
 .main .projectAA .buttonArea {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     width: 30%;
+=======
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
 
 .main .projectAA h2 {
@@ -90,7 +118,11 @@
 
 .main .projectAA p {
     color: var(--color-text-3);
+<<<<<<< HEAD
     font-size: 17px;
+=======
+    font-size: 15px;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
 
 
@@ -113,10 +145,19 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
+<<<<<<< HEAD
 
 .main .about {
     background-color: var(--color-2);
     padding: 7.5vw;
+=======
+/*===================================================*/
+
+
+.main .about {
+    background-color: var(--color-2);
+    padding: 100px;
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -124,6 +165,7 @@
 }
 
 .main .about h2 {
+<<<<<<< HEAD
     font-size: 3.3vw;
     font-weight: bold;
     color: var(--color-text-1);
@@ -250,4 +292,15 @@
 
 @media screen and (max-width: 1280px) {/* FULL DESKTOP */
 
+=======
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main .about p {
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+    color: var(--color-text-2);
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }

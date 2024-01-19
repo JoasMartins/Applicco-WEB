@@ -1,17 +1,27 @@
 'use client'
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import appData from "../../appData.json"
 import "../css/Agendaaprendize.css"
+<<<<<<< HEAD
 import Image from 'next/image';
 
 import SessionHome from "../../components/SessionHome";
 
 
 
+=======
+
+import SessionHome from "../../components/SessionHome";
+
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 function Index() {
 
     const router = useRouter()
@@ -44,7 +54,11 @@ function Index() {
                         <div className='Hire'>
                             <div className='texts'>
                                 <h3>Contratar o aplicativo para a sua escola:</h3>
+<<<<<<< HEAD
                                 <p>Ao contratar o Agenda Aprendize para a sua escola, o nome do app será mudado para o do seu colégio, assim como sua foto, suas cores e tudo oque está associado a identidade visual, fazendo com que o seu app seja 100% desvínculado a E. E. Sebastião Patrus de Souza.</p>
+=======
+                                <p>Ao contratar o Agenda Patrus para a sua escola, o nome do app será mudado para o do seu colégio, assim como sua foto, suas cores e tudo oque está associado a identidade visual, fazendo com que o seu app seja 100% desvínculado a E. E. Sebastião Patrus de Souza.</p>
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
                                 <p>Aperte o botão ao lado para contratar o aplicativo.</p>
                             </div>
                             <button onClick={handleHire} className='areaActionButton'>
@@ -76,6 +90,7 @@ function Index() {
                 </div>
 
                 <SessionHome
+<<<<<<< HEAD
                     title="APROVADO POR DIRETORES E SECRETÁRIOS"
                     text="Esse projeto foi aplicado na rede escolar E. E. Sebastião Patrus de Souza e obteve a aprovação e elogios da equipe administrativa, secretários e diretores, sem contar com a excelente avaliação de professores e alunos."
                     image="/agendaaprendize/approved.svg"
@@ -176,6 +191,63 @@ function Index() {
                     <div>
                         <Image src={"/info.svg"} width={30} height={30} />
                         <p>Aviso!</p>
+=======
+                title="APROVADO POR DIRETORES E SECRETÁRIOS"
+                text="Esse projeto foi aplicado na rede escolar E. E. Sebastião Patrus de Souza e obteve a aprovação e elogios da equipe administrativa, secretários e diretores, sem contar com a excelente avaliação de professores e alunos."
+                image="/aprovado.png"
+                color="#5e86ff"
+            />
+
+    
+
+            <SessionHome
+                title="O QUE É O PROJETO?"
+                text="O projeto Agenda Patrus é um aplicativo para celulares criado para reunir várias funções que agregam nos estudos e na gestão da escola."
+                image="/logo192.png"
+                color="#292929"
+                direction="right"
+            />
+
+            <SessionHome
+                title="SOBRE O APLICATIVO"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, aliquid quaerat quis alias amet dignissimos ad expedita optio iste. Eligendi dolore totam blanditiis sapiente saepe eum consequatur recusandae ab."
+                image="/logo192.png"
+                color="#5e86ff"
+            />
+
+            <SessionHome
+                title="TITULO TITULO"
+                text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, aliquid quaerat quis alias amet dignissimos ad expedita optio iste. Eligendi dolore totam blanditiis sapiente saepe eum consequatur recusandae ab."
+                image="/logo192.png"
+                color="#292929"
+                direction="right"
+            />
+
+                <div className='main_areaNotify'>
+                    <h3 className='main_titleNotify'>Sistema de Notificações</h3>
+                    <p className='main_textNotify'>Apelidado carinhosamente de MaiconNotify System, é o sistema de notificações da Agenda Patrus, criado para sempre avisar com antecedência sobre as tarefas programadas, para que você possa se preparar e não se esquecer delas. Confira abaixo como esse sistema funciona no aplicativo.</p>
+                    <p className='main_textNotify'>Sempre que o dia de uma tarefa estiver se aproximando, o sistema irá te avisar quantos dias restam para a data marcada. Por exemplo: Se a tarefa chamada &quot;Trabalho de Matemática&quot; estiver agendada para um determinado dia, quando faltar 3 dias para essa tarefa, e se a opção de avisar com 3 dias de antecedência estiver ativada em sua conta, o sistema irá te notificar sobre essa tarefa e outras que estejam próximas.</p>
+                    <p className='main_textNotify'>Vale ressaltar que o usuário terá a liberdade de escolher quantos dias antes deseja ser notificado, e essas configurações podem ser ajustadas conforme sua preferência.</p>
+                    <p className='main_'>Confira as opções:</p>
+                    <ul>
+                        <li>Quando uma tarefa for criada;</li>
+                        <li>Todos os dias as 04h listar as tarefas do dia;</li>
+                        <li>Tarefas que estão restando 1 dia;</li>
+                        <li>Tarefas que estão restando 2 dias;</li>
+                        <li>Tarefas que estão restando 3 dias;</li>
+                        <li>Tarefas que estão restando 4 dias;</li>
+                        <li>Tarefas que estão restando 5 dias;</li>
+                        <li>Tarefas que estão restando 6 dias;</li>
+                        <li>Tarefas que estão restando 7 dias;</li>
+                        <li>Tarefas que estão restando 10 dias.</li>
+                    </ul>
+                </div>
+
+                <div className='main_areaInfo'>
+                    <div>
+                        <a>!</a>
+                        <h3>Aviso</h3>
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
                     </div>
                     <p className='destaque'>Este aplicativo não foi criado nem solicitado pela equipe da secretaria ou direção da escola!</p>
                     <p className='nao_destaque'>Portanto, quaisquer erros, falhas ou problemas no aplicativo não devem ser reportados a eles, mas sim ao desenvolvedor do aplicativo.</p>

@@ -25,9 +25,12 @@
   --color-3: #073ace;
   --color-4: #23347C;
   --color-5: #111C49;
+<<<<<<< HEAD
   --color-6: #2c61ff;
   --color-7: #5e86ff;
   --color-8: #0c1127;
+=======
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
   --color-background: #292929;
   --color-background-2: #e2e2e2;
   --color-text-1: #fafafa;
@@ -78,6 +81,7 @@ main h3 {
 
 main p {
   color: var(--color-text);
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 320px) {/* MOBILE */
@@ -94,4 +98,6 @@ main p {
 
 @media screen and (max-width: 1280px) {/* FULL DESKTOP */
 
+=======
+>>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
