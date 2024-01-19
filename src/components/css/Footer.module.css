@@ -136,7 +136,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  align-items: end;
   color: #fff;
   font-weight: 500;
   margin-right: 10px;
@@ -152,7 +151,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  align-items: start;
   color: var(--color-discreto);
   margin-left: 0px;
   font-size: 1.5rem;
