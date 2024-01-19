@@ -218,16 +218,12 @@
     display: block;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     padding-left: 100px;
-=======
     width: 100%;
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
   }
   
   .main_areaInfo div {
     display: flex;
-<<<<<<< HEAD
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-default);
@@ -245,7 +241,6 @@
     padding: 0.1rem;
     font-size: 2.5rem;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-=======
     align-items: center;
     background-color: var(--color-default);
     margin: 15px;
@@ -269,7 +264,6 @@
     height: 30px;
     width: 30px;
     text-align: center;
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
   }
   
   p.destaque {
@@ -277,10 +271,7 @@
     font-weight: 700;
     font-size: 2rem;
     margin: 0px;
-<<<<<<< HEAD
     margin-left: 10px;
-=======
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
   }
   
   p.nao_destaque {
@@ -288,10 +279,7 @@
     font-weight: 100;
     margin: 0px;
     font-size: 1.7rem;
-<<<<<<< HEAD
     margin-left: 10px;
-=======
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
   }
 
 

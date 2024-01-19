@@ -1,28 +1,16 @@
-<<<<<<< HEAD
-=======
-.ContratarPage {}
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
-
 .ContratarPage .main {
     background-color: #292929;
     display: flex;
-<<<<<<< HEAD
     flex-direction: column;
 }
-
 .main h1, .main h2, .main h3, .main h4, .main p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-=======
     justify-content: center;
     flex-direction: column;
 }
 
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 .ContratarPage .titles {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
@@ -116,10 +104,6 @@
     padding-left: 0.5rem;
 }
 
-.ContratarPage .main .dev .buttons button:hover {
-
-}
-
 .ContratarPage .main .dev .buttons button:hover  {
     background-color: var(--color-default)00;
     border-color: var(--color-default);
@@ -151,18 +135,14 @@
 }
 
 
-<<<<<<< HEAD
-.ContratarPage .textsInfo {
-=======
+/*.ContratarPage .textsInfo {*/
 .ContratarPage .texts {
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
     margin: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-<<<<<<< HEAD
 .ContratarPage .textsInfo img {
     height: 180px;
 }
@@ -170,7 +150,8 @@
 .ContratarPage .textsInfo p {
     font-size: 14px;
     max-width: 40vw;
-=======
+}
+
 .ContratarPage .texts img {
     height: 180px;
 }
@@ -178,7 +159,6 @@
 .ContratarPage .texts p {
     font-size: 14px;
     width: 60%;
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
 
 .ContratarPage .contratar {
@@ -190,7 +170,6 @@
 }
 
 .ContratarPage .contratar p {
-<<<<<<< HEAD
     width: 60%;
 }
 
@@ -202,9 +181,7 @@
 
 .ContratarPage .contratar span {
     color: #c7c7c7;
-=======
     width: 40%;
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
 
 .ContratarPage .valor {
@@ -251,7 +228,6 @@
     padding: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
     cursor: pointer;
-<<<<<<< HEAD
     border: 2px solid var(--color-7);
     transition: all 0.3s;
 }
@@ -278,14 +254,11 @@
 
 .ContratarPage .actions button:hover .divisoria {
     background-color: var(--color-text-1);
-=======
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }
 
 .ContratarPage .actions div div {
     padding: 10px 0px;
     font-size: 13px;
-<<<<<<< HEAD
 }
 
 .ContratarPage .textsCredits {
@@ -298,6 +271,4 @@
     background-color: var(--color-text-6);
     margin-left: 10px;
     margin-right: 10px;
-=======
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }

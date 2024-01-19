@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-<<<<<<< HEAD
     background-image: linear-gradient(130deg, var(--color-2)-20%, var(--color-8));
     -webkit-box-shadow: 0px 4px 39px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 4px 39px -4px rgba(0, 0, 0, 0.75);
@@ -12,11 +11,6 @@
 
 
 
-=======
-    background-color: var(--color-3);
-}
-
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 .style .logo h1 {
     color: var(--color-text-1);
     font-size: 4.0rem;
@@ -32,7 +26,6 @@
 .style .nav {
     display: flex;
     margin-right: 50px;
-<<<<<<< HEAD
     align-items: center;
 }
 
@@ -72,10 +65,6 @@
 }
 
 /*
-=======
-}
-
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 .style .nav button {
     all: unset;
     margin-left: 15px;
@@ -92,7 +81,6 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
-<<<<<<< HEAD
 */
 
 .style .nav button {
@@ -155,19 +143,4 @@
         justify-content: center;
         align-items: center;
     }
-=======
-
-.style .nav button:hover {
-    background-color: var(--color-3);
-    color: #fff;
-
-}
-
-.style .nav .requestService {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.style .nav .requestService:hover {
-    background-color: var(--color-2);
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 }

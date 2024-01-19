@@ -1,27 +1,17 @@
 'use client'
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import appData from "../../appData.json"
 import "../css/Agendaaprendize.css"
-<<<<<<< HEAD
+
 import Image from 'next/image';
 
 import SessionHome from "../../components/SessionHome";
 
-
-
-=======
-
 import SessionHome from "../../components/SessionHome";
 
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
 function Index() {
 
     const router = useRouter()
@@ -54,11 +44,8 @@ function Index() {
                         <div className='Hire'>
                             <div className='texts'>
                                 <h3>Contratar o aplicativo para a sua escola:</h3>
-<<<<<<< HEAD
                                 <p>Ao contratar o Agenda Aprendize para a sua escola, o nome do app será mudado para o do seu colégio, assim como sua foto, suas cores e tudo oque está associado a identidade visual, fazendo com que o seu app seja 100% desvínculado a E. E. Sebastião Patrus de Souza.</p>
-=======
                                 <p>Ao contratar o Agenda Patrus para a sua escola, o nome do app será mudado para o do seu colégio, assim como sua foto, suas cores e tudo oque está associado a identidade visual, fazendo com que o seu app seja 100% desvínculado a E. E. Sebastião Patrus de Souza.</p>
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
                                 <p>Aperte o botão ao lado para contratar o aplicativo.</p>
                             </div>
                             <button onClick={handleHire} className='areaActionButton'>
@@ -90,108 +77,6 @@ function Index() {
                 </div>
 
                 <SessionHome
-<<<<<<< HEAD
-                    title="APROVADO POR DIRETORES E SECRETÁRIOS"
-                    text="Esse projeto foi aplicado na rede escolar E. E. Sebastião Patrus de Souza e obteve a aprovação e elogios da equipe administrativa, secretários e diretores, sem contar com a excelente avaliação de professores e alunos."
-                    image="/agendaaprendize/approved.svg"
-                    color="#5e86ff"
-                />
-
-                <SessionHome
-                    title="O QUE É O PROJETO?"
-                    text="O Agenda Aprendize é um aplicativo móvel projetado para integrar diversas funcionalidades, visando simplificar a gestão escolar e potencializar a experiência de estudos. Com diversos recursos, o aplicativo oferece soluções tanto para alunos, quanto para professores e direção, promovendo eficiência e organização na rotina escolar."
-                    image="/agendaaprendize/project.svg"
-                    color="#292929"
-                    direction="right"
-                />
-
-                <SessionHome
-                    title="ÁREA DO PROFESSOR"
-                    text=""
-                    image="/agendaaprendize/owl-teacher.svg"
-                    color="#5e86ff"
-                    custom={4}
-                />
-
-                <SessionHome
-                    title="NOTIFICAÇÕES"
-                    text=''
-                    image="/agendaaprendize/phone.svg"
-                    color="#0c1127"
-                    direction="right"
-                    custom={3}
-                />
-
-                <SessionHome
-                    title="EXIBIÇÃO POR DIAS"
-                    text=''
-                    image="/agendaaprendize/calendar.svg"
-                    color="#292929"
-                    custom={1}
-                />
-
-                <SessionHome
-                    title="JORNAL DA ESCOLA"
-                    text=""
-                    image="/agendaaprendize/news.svg"
-                    color="#5e86ff"
-                    custom={5}
-                    textBadge={"Em Breve"}
-                />
-
-                <SessionHome
-                    title="PROPRIEDADES DAS TAREFAS"
-                    text=''
-                    image="/agendaaprendize/list.svg"
-                    color="#292929"
-                    direction="right"
-                    custom={2}
-                />
-
-                <SessionHome
-                    title="ESTATISTICAS"
-                    text="Acesso as informações que ficam armazenadas no app, como: a quantidade de tarefas atribuídas a cada aluno ou turma; as que foram feitas ou não por cada aluno; os estudantes que mais fizeram atividades; as turmas que mais realizam suas tarefas; turmas com mais tarefas atribuidas, entre outros dados."
-                    image="/agendaaprendize/statistics.svg"
-                    color="#5e86ff"
-                    textBadge={"Em Breve"}
-                />
-
-                <SessionHome
-                    title="MARCAR COMO FEITO"
-                    text="Cada aluno terá controle sobre suas tarefas, marcando quais já foram feitas ou não. Essas marcações são contabilizadas para estátistica sobre o aluno e separar oque já foi feito ou oque está pendente."
-                    image="/agendaaprendize/stamp.svg"
-                    color="#292929"
-                    direction="right"
-                />
-
-                <SessionHome
-                    title="SEPARAÇÃO POR TURMAS"
-                    text='Cada turma terá suas tarefas separadas das demais, projetado para exibir aos alunos de cada turma apenas as atividades que foram lançadas para a sua turma, ou seja, alunos de outras turmas terão em seus menus outras tarefas, aquelas que foram lançadas para sua turma.'
-                    image="/agendaaprendize/student.svg"
-                    color="#5e86ff"
-                />
-
-                <SessionHome
-                    title="USAR EM OUTRAS ESCOLAS"
-                    text=""
-                    image="/agendaaprendize/contract.svg"
-                    color="#292929"
-                    direction="right"
-                    custom={6}
-                />
-
-                <SessionHome
-                    title="DESENVOLVIMENTO DO APLICATIVO"
-                    text="Projeto começou a ser desenvolvido em Maio de 2023, por um aluno do segundo ano do ensino médio (na época) da rede escolar pública Estadual Sebatião Patrus de Souza. Esse mesmo desenvolvedor é fundador da Equipe Applicco, de criação de aplicativos, sites e softwares. Enfrentando problemas em seu cronograma de tarefas, iniciu o projeto que a príncipio serviria apenas para uso particular do mesmo, mas que foi decidido aumentar o alcance para beneficiar mais estudantes tanto de sua escola quanto de outras."
-                    image="/agendaaprendize/development.svg"
-                    color="#5e86ff"
-                />
-
-                <div className='main_areaInfo'>
-                    <div>
-                        <Image src={"/info.svg"} width={30} height={30} />
-                        <p>Aviso!</p>
-=======
                 title="APROVADO POR DIRETORES E SECRETÁRIOS"
                 text="Esse projeto foi aplicado na rede escolar E. E. Sebastião Patrus de Souza e obteve a aprovação e elogios da equipe administrativa, secretários e diretores, sem contar com a excelente avaliação de professores e alunos."
                 image="/aprovado.png"
@@ -247,7 +132,6 @@ function Index() {
                     <div>
                         <a>!</a>
                         <h3>Aviso</h3>
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
                     </div>
                     <p className='destaque'>Este aplicativo não foi criado nem solicitado pela equipe da secretaria ou direção da escola!</p>
                     <p className='nao_destaque'>Portanto, quaisquer erros, falhas ou problemas no aplicativo não devem ser reportados a eles, mas sim ao desenvolvedor do aplicativo.</p>

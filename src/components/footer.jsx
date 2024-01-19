@@ -15,11 +15,7 @@ export default function Page() {
             <div className={styles.services}>
                 <div className={styles.logo}>
                     <div>
-<<<<<<< HEAD
                         <img src='applicco-logo.svg' alt='Ícone da Applicco' />
-=======
-                        <img src='applicco-logo.svg' alt='Ícone da Agenda Patrus' />
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
                         <h1>Applicco</h1>
                     </div>
                     <p>Aplicativos e Softwares</p>
@@ -50,11 +46,7 @@ export default function Page() {
 
 
                     <ul className={styles.value}>
-<<<<<<< HEAD
                         <a href='mailto:joasmcarmo@gmail.com' target='_blank'>joasmcarmo@gmail.com</a>
-=======
-                        <a href='mailto:joasmcarmo@gmail.com?subject=Agenda Patrus&body=' target='_blank'>joasmcarmo@gmail.com</a>
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
                         <a href='https://www.instagram.com/joas_mc_/' target='_blank'>@joas_mc_</a>
                         <Link href={"/portfolio"}><p>Clique para acessar</p></Link>
                     </ul>
@@ -73,11 +65,7 @@ export default function Page() {
                     </ul>
 
                     <ul className={styles.value}>
-<<<<<<< HEAD
                         <a href='mailto:contato@applicco.com.br?subject=&body=' target='_blank'>contato@applicco.com.br</a>
-=======
-                        <a href='mailto:contato@applicco.com.br@gmail.com?subject=&body=' target='_blank'>contato@applicco.com.br</a>
->>>>>>> 2a0f35c0c13316d4fba5bff9885465c3d5b6fb1e
                         <a href='https://www.instagram.com/appliccoapps/' target='_blank'>@appliccoapps</a>
                     </ul>
                 </div>
