@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link"
 import styles from "./css/Home.module.css"
+import Image from "next/image"
 
 export default function Page() {
 
@@ -11,14 +12,14 @@ export default function Page() {
 
   function ItemList({ name, icon, color }) {
     return (<div>
-      <img src={`/${icon}`} />
+      <Image src={`/${icon}`} alt="" />
       <p>{name}</p>
     </div>)
   }
 
   function ItemBlock({ name, icon, color }) {
     return (<div>
-      <img src={`/${icon}`} />
+      <Image src={`/${icon}`} alt="" />
       <p>{name}</p>
     </div>)
   }
@@ -33,7 +34,7 @@ export default function Page() {
           <p>Somos uma equipe de criação de <span>Websites</span>, <span>Aplicativos Mobile</span>, <span>Chatbots</span> e aquilo que você precisa para revoluncionar o seu negócio.</p>
         </div>
         <div align="center">
-          <div align="center"><img src="/dev-ia.svg" /></div>
+          <div align="center"><Image src="/dev-ia.svg" alt="Humano interagindo com bot num celular" /></div>
           <div align="center"><button onClick={handleModalRequestService}>Solicitar serviço</button></div>
         </div>
       </div>

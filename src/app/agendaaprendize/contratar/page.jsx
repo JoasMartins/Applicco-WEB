@@ -49,7 +49,7 @@ export default function PageContratar() {
                         <p>Sua escola terá acesso ao aplicativo e ele será totalmente personalizado para o seu colégio. Cada escola que contrata o nosso projeto, terá um aplicativo exclusivo com a sua identidade visual e com os recursos padrão que o aplicativo oferece.</p>
                     </div>
                     <div>
-                        <Image src="/phone.svg" width={180} height={180} />
+                        <Image src="/phone.svg" width={180} height={180} alt="Figurinha de Celular" />
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ export default function PageContratar() {
 
                         <div className="buttonArea">
                             <button onClick={handleCTTemail}>
-                                <Image src={"/email-icon.png"} width={20} height={20} className="icon" id="email" />
+                                <Image src={"/email-icon.png"} alt="ícone de Email" width={20} height={20} className="icon" id="email" />
                                 <div className="divisoria" />
                                 <p>Via Email</p>
                             </button>
@@ -78,7 +78,7 @@ export default function PageContratar() {
 
                         <div className="buttonArea">
                             <button onClick={handleCTTwhatsapp}>
-                                <Image src={"/whatsapp-logo.png"} width={20} height={20} className="icon" />
+                                <Image src={"/whatsapp-logo.png"} alt="ícone do WhatsApp" width={20} height={20} className="icon" />
                                 <div className="divisoria" />
                                 <p>Via WhatsApp</p>
                             </button>
@@ -90,7 +90,7 @@ export default function PageContratar() {
 
                         <div className="buttonArea">
                             <button onClick={handleCTTinstagram}>
-                                <Image src={"/instagram-logo.png"} width={20} height={20} className="icon" />
+                                <Image src={"/instagram-logo.png"} alt="ícone do Instagram" width={20} height={20} className="icon" />
                                 <div className="divisoria" />
                                 <p>Via Instagram</p>
                             </button>
@@ -104,10 +104,10 @@ export default function PageContratar() {
 
                 <div className="dev">
                     <p className="title">Esse é um projeto desenvolvido por:</p>
-                    <img src="/appliccoBanner.png" className="appliccoLogo" />
+                    <Image src="/appliccoBanner.png" className="appliccoLogo" alt="Logo da Applicco" />
                     <div className="buttons">
                         <button onClick={handleInstagramAPC}>
-                            <img src="/instagram-logo.png" />
+                            <Image src="/instagram-logo.png" alt="ícone do Instagram" />
                             <p>Instagram</p>
                         </button>
                         

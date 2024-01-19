@@ -173,7 +173,7 @@ function Index() {
 
                 <div className='main_areaInfo'>
                     <div>
-                        <Image src={"/info.svg"} width={30} height={30} />
+                        <Image src={"/info.svg"} width={30} height={30} alt="ícone de Informação" />
                         <p>Aviso!</p>
                     </div>
                     <p className='destaque'>Este aplicativo não foi criado nem solicitado pela equipe da secretaria ou direção da escola!</p>

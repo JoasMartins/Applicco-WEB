@@ -23,9 +23,9 @@ export default function SessionHome({ title, text, image, color, direction, cust
             text = (<div>
                 <p>As tarefas são exibidas em três sessões e divididas com o tempo restante até o prazo final de cada atividade, esses campos são:</p>
                 <ul style={{marginLeft:"20px" }}>
-                    <li><p><span style={{ fontWeight: "bold" }}>"Hoje"</span> para tarefas do dia atual;</p></li>
-                    <li><p><span style={{ fontWeight: "bold" }}>"Uma semana"</span> para tarefas nos próximos 7 dias;</p></li>
-                    <li><p><span style={{ fontWeight: "bold" }}>"Próximos"</span> para todas as demais tarefas para depois dos próximos 7 dias.</p></li>
+                    <li><p><span style={{ fontWeight: "bold" }}>&ldquo;Hoje&ldquo;</span> para tarefas do dia atual;</p></li>
+                    <li><p><span style={{ fontWeight: "bold" }}>&ldquo;Uma semana&ldquo;</span> para tarefas nos próximos 7 dias;</p></li>
+                    <li><p><span style={{ fontWeight: "bold" }}>&ldquo;Próximos&ldquo;</span> para todas as demais tarefas para depois dos próximos 7 dias.</p></li>
                 </ul>
             </div>)
         }
@@ -62,7 +62,7 @@ export default function SessionHome({ title, text, image, color, direction, cust
             text = (<div>
                 <p>Com um sistema seguro para registro dos professores, eles terão acesso a Área do Professor que lhes será exibido as tarefas na mesma organização que para os alunos, com tarefas marcadas para o dia, tarefas em 7 dias e nos dias a seguir. Isso facilita para que os professores saibam quais atividades tem para o dia de hoje e para qual turma foi agendada, acabando com a confusão de inúmeras tarefas diferentes em várias turmas.</p>
                 <div style={{ display: "flex", alignItems: "center", backgroundColor: "#4071ff", padding: 0, borderRadius: 10, border: "1px solid #9fb7ff", marginTop: 10 }}>
-                    <Image src={"/info.svg"} width={40} height={40} style={{ margin: "10px" }} />
+                    <Image src={"/info.svg"} width={40} height={40} style={{ margin: "10px" }} alt="ícone de Informação" />
                     <div>
                         <h4>EM BREVE:</h4>
                         <p style={{ fontSize: 12 }}>Os professores terão um menu com <span>apenas</span> as tarefas que eles lançaram, e organizadas para auxiliar cada professor no lançamento de suas matérias.</p>

@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import styles from "./css/Footer.module.css"
+import Image from "next/image"
 
 export default function Page() {
     let year = new Date().getFullYear()
@@ -15,7 +16,7 @@ export default function Page() {
             <div className={styles.services}>
                 <div className={styles.logo}>
                     <div>
-                        <img src='applicco-logo.svg' alt='Ícone da Applicco' />
+                        <Image src='applicco-logo.svg' alt='Ícone da Applicco' />
                         <h1>Applicco</h1>
                     </div>
                     <p>Aplicativos e Softwares</p>
