@@ -1,11 +1,13 @@
-'use client'
 import React from "react";
 import "../../css/Contratar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPlus } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import Buttons from "./Buttons";
 
-import SessionHome from "../../../components/SessionHome";
+export const metadata = {
+    title: "Contratar - Agenda Aprendize"
+}
 
 export default function PageContratar() {
 
@@ -36,7 +38,6 @@ export default function PageContratar() {
     return (
         <main className="ContratarPage">
 
-
             <div className="main">
                 <div className="titles">
                     <h1>CONTRATAR APLICATIVO PARA A SUA ESCOLA</h1>
@@ -66,22 +67,14 @@ export default function PageContratar() {
                     <div className="actions">
 
                         <div className="buttonArea">
-                            <button onClick={handleCTTemail}>
-                                <Image src={"/email-icon.png"} alt="ícone de Email" width={20} height={20} className="icon" id="email" />
-                                <div className="divisoria" />
-                                <p>Via Email</p>
-                            </button>
+                            <Buttons name={"CTTemail"} />
                             <div>
                                 <p>contato@applicco.com.br</p>
                             </div>
                         </div>
 
                         <div className="buttonArea">
-                            <button onClick={handleCTTwhatsapp}>
-                                <Image src={"/whatsapp-logo.png"} alt="ícone do WhatsApp" width={20} height={20} className="icon" />
-                                <div className="divisoria" />
-                                <p>Via WhatsApp</p>
-                            </button>
+                            <Buttons name={"CTTwhatsapp"} />
                             <div>
                                 <p>+55 (16) 98831-8960</p>
                                 <p>(Número pessoal)</p>
@@ -89,11 +82,7 @@ export default function PageContratar() {
                         </div>
 
                         <div className="buttonArea">
-                            <button onClick={handleCTTinstagram}>
-                                <Image src={"/instagram-logo.png"} alt="ícone do Instagram" width={20} height={20} className="icon" />
-                                <div className="divisoria" />
-                                <p>Via Instagram</p>
-                            </button>
+                            <Buttons name={"CTTinstagram"} />
                             <div>
                                 <p>@appliccoapps</p>
                             </div>
@@ -106,10 +95,7 @@ export default function PageContratar() {
                     <p className="title">Esse é um projeto desenvolvido por:</p>
                     <Image src="/appliccoBanner.png" className="appliccoLogo" alt="Logo da Applicco" height={100} width={300} />
                     <div className="buttons">
-                        <button onClick={handleInstagramAPC}>
-                            <Image src="/instagram-logo.png" alt="ícone do Instagram" height={30} width={40} />
-                            <p>Instagram</p>
-                        </button>
+                        
 
                         {/*
                         <button onClick={handleContactAPC}>
@@ -117,10 +103,8 @@ export default function PageContratar() {
                             <p>Entrar em contato</p>
                         </button>
                         */}
-                        <button onClick={handleMoreServiceAPC}>
-                            <FontAwesomeIcon icon={faPlus} className="icon" />
-                            <p>Solicitar outro serviço</p>
-                        </button>
+                        <Buttons name={"InstagramAPC"} />
+                        <Buttons name={"MoreService"} />
                     </div>
                     <div className="texts">
                         <p>A Applicco é gerenciada por <a href="https://www.instagram.com/joas_mc_" target="__blank">Joás Martins</a>,</p>

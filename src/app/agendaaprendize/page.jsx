@@ -1,19 +1,24 @@
-'use client'
+
+
 import React from 'react';
-import { useRouter } from 'next/navigation';
+//import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import appData from "../../appData.json"
 import "../css/Agendaaprendize.css"
 import Image from 'next/image';
-
+import Head from 'next/head';
 import SessionHome from "../../components/SessionHome";
+import Link from 'next/link';
+import ButtonDownload from './ButtonDownload';
 
-
+export const metadata = {
+    title: "Projeto: Agenda Aprendize"
+}
 
 function Index() {
 
-    const router = useRouter()
+    
 
     const handleDownload = () => {
         const apkFileName = appData.apkname;
@@ -27,11 +32,12 @@ function Index() {
 
     const handleHire = () => {
         //window.location.href = "/agendaaprendize/contratar"
-        router.push("/agendaaprendize/contratar")
     }
 
     return (
         <div className="App">
+
+
             <main>
                 <div className='main'>
                     <div className='main_areaTitle'>
@@ -46,11 +52,13 @@ function Index() {
                                 <p>Ao contratar o Agenda Aprendize para a sua escola, o nome do app será mudado para o do seu colégio, assim como sua foto, suas cores e tudo oque está associado a identidade visual, fazendo com que o seu app seja 100% desvínculado a E. E. Sebastião Patrus de Souza.</p>
                                 <p>Aperte o botão ao lado para contratar o aplicativo.</p>
                             </div>
-                            <button onClick={handleHire} className='areaActionButton'>
+                            <Link href={"/agendaaprendize/contratar"} style={{textDecoration: "none"}}>
+                            <button className='areaActionButton'>
                                 <FontAwesomeIcon icon={faHandshake} className='iconButton' />
                                 <div className='barraDivisoria' />
                                 <p>Contratar</p>
                             </button>
+                            </Link>
                         </div>
 
                         <div className='Download'>
@@ -60,11 +68,7 @@ function Index() {
                                 <p>Certifique-se de que nas configurações do seu dispositivo a opção esteja ativada. Não sabe como ativar? <a href='https://www.showmetech.com.br/instalando-aplicativos-android-de-fontes-desconhecidas/' target="_blank" rel="noopener noreferrer">Clique aqui</a>.</p>
                             </div>
                             <div className="alert">
-                                <button onClick={handleDownload} disabled={true} className='areaActionButton'>
-                                    <FontAwesomeIcon icon={faDownload} className='iconButton' />
-                                    <div className='barraDivisoria' />
-                                    <p>Baixar</p>
-                                </button>
+                                <ButtonDownload/>
                                 <p className='text1'>Download indisponível!</p>
                                 <p className='text2'>Aplicativo ainda não foi lançado.</p>
                             </div>

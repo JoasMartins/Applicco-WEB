@@ -16,7 +16,7 @@ export default function Page() {
             <div className={styles.services}>
                 <div className={styles.logo}>
                     <div>
-                        <Image src='applicco-logo.svg' alt='Ícone da Applicco' height={60} width={60} />
+                        <Image src='/applicco-logo.svg' alt='Ícone da Applicco' height={60} width={60} />
                         <h1>Applicco</h1>
                     </div>
                     <p>Aplicativos e Softwares</p>
@@ -74,7 +74,7 @@ export default function Page() {
 
             <div  className={styles.creditos}>
                 <div className={styles.box}>
-                    <p className={styles.dev}>Gerenciado por <span>Joás Martins</span> e <span>Ricardo Oliveira</span>.</p>
+                    <p className={styles.dev}>Gerenciado por <span>Joás Martins</span>.</p>
                     <p className={styles.love}>Feito com ❤️ para um <span>futuro</span>!</p>
                 </div>
             </div>

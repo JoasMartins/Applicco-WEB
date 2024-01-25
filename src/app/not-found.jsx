@@ -1,8 +1,14 @@
 import styles from "./css/Not-Found.module.css"
 import Image from "next/image"
 
+export const metadata = {
+    title: "404 - Página não encontrada"
+}
+
 export default function Page() {
     return (<main className={styles.main}>
+
+
         <div className={styles.box}>
             <Image src="/404.svg" alt="Erro 404" height={300} width={300} />
             <div>

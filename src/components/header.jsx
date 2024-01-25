@@ -14,7 +14,7 @@ import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar/sidebar";
 
 export default function Page() {
-    const [openedSidebar, setOpenedSidebar] = useState(true)
+    const [openedSidebar, setOpenedSidebar] = useState(false)
 
     const router = useRouter()
 

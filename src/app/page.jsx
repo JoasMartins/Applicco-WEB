@@ -1,32 +1,22 @@
-'use client'
 import Link from "next/link"
 import styles from "./css/Home.module.css"
 import Image from "next/image"
+import Head from "next/head"
+import ButtonsHome from "@/components/ButtonsHome"
+
+export const metadata = {
+  description: "Informações sobre a Equipe Applicco e links",
+}
 
 export default function Page() {
-
-  function handleModalRequestService() {
-    //  Abrir um modal onde terá os passos para solicitar um serviço
-    window.open("mailto:contato@applicco.com.br?subject=Solicitação de Serviço")
-  }
-
-  function ItemList({ name, icon, color }) {
-    return (<div>
-      <Image src={`/${icon}`} alt="" />
-      <p>{name}</p>
-    </div>)
-  }
-
-  function ItemBlock({ name, icon, color }) {
-    return (<div>
-      <Image src={`/${icon}`} alt="" />
-      <p>{name}</p>
-    </div>)
-  }
-
   return (
     <main className={styles.main}>
-
+      <Head>
+        <meta name="keywords" content="applicco, aplico, applico, aplicco, app, licco, app licco, aplicativo, software, site, website, agenda aprendize, agenda patrus"></meta>
+        <meta property="og:title" content="Applicco - Aplicativos e Softwares"></meta>
+        <meta property="og:description" content="Equipe especializada em criação de aplicativos, websites, softwares entre outros produtos digitais."></meta>
+        <meta property="og:url" content="https://applicco.com.br"></meta>
+      </Head>
       <div className={styles.header}>
         <div>
           <h1>Sua inovação se aplica aqui!</h1>
@@ -35,7 +25,7 @@ export default function Page() {
         </div>
         <div align="center">
           <div align="center"><Image src="/dev-ia.svg" alt="Humano interagindo com bot num celular" height={440} width={440} className="Image" /></div>
-          <div align="center"><button onClick={handleModalRequestService}>Solicitar serviço</button></div>
+          <div align="center"><ButtonsHome name={"ModalRequestService"} /></div>
         </div>
       </div>
 
@@ -45,7 +35,7 @@ export default function Page() {
           <p>Esse é um dos nossos projetos principais e que tem foco auxiliar a gestão das tarefas estudantis de redes escolares. Clique no botão ao lado para saber mais sobre o projeto.</p>
         </div>
         <div className={styles.buttonArea}>
-          <Link href={"/agendaaprendize"} style={{textDecoration: "none"}}><button>Saber mais</button></Link>
+          <Link href={"/agendaaprendize"} style={{ textDecoration: "none" }}><button>Saber mais</button></Link>
         </div>
       </div>
 
@@ -58,7 +48,7 @@ export default function Page() {
         /*
         
         //  LIBERAR ESSA PARTE
-
+ 
       <div>
         <h2>Projetos Desenvolvidos:</h2>
         <div>
@@ -70,26 +60,26 @@ export default function Page() {
           </div>
         </div>
       </div>
-
+ 
       <div>
         <div>
           <h2>Produtos Que Desenvolvemos</h2>
           <p>Aqui estão os serviços que realizamos, todos os tipos de projetos que criamos:</p>
-
+ 
           <div>
             <h3>Utilidades</h3>
             <ItemList name="Website" icon="" color="" />
             <ItemList name="Aplicativos Mobile" icon="" color="" />
             <ItemList name="Aplicativos Desktop" icon="" color="" />
           </div>
-
+ 
           <div>
             <h3>Sistemas</h3>
             <ItemList name="Softwares" icon="" color="" />
             <ItemList name="APIs" icon="" color="" />
             <ItemList name="Banco de Dados" icon="" color="" />
           </div>
-
+ 
           <div>
             <h3>Bots & Chatbots</h3>
             <ItemList name="Para WhatsApp" icon="" color="" />
@@ -97,14 +87,14 @@ export default function Page() {
             <ItemList name="Para Telegram" icon="" color="" />
           </div>
         </div>
-
+ 
         <div>
           <h2>Outros serviços</h2>
           <p>Você tem alguma ideia ou projeto em mente mas não sabe como ele pode sair do papel e ser criado? Entre em contato conosco e nos explique sua ideia que te apresentaremo como podemos faze-la.</p>
         </div>
         <button>Solicitar um serviço</button>
       </div>
-
+ 
       <div>
         <h2>Linguagens de programação, Frameworks e tecnologias que utilizamos:</h2>
         <ItemBlock name="JavaScript" icon="" color="" />
@@ -116,9 +106,9 @@ export default function Page() {
         <ItemBlock name="NodeJS" icon="" color="" />
         <ItemBlock name="MongoDB" icon="" color="" />
       </div>
-
+ 
               */
-    }
+      }
 
 
     </main>

@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import style from "./css/SessionHome.module.css"
 import Image from "next/image";
