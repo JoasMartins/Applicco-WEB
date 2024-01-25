@@ -13,11 +13,6 @@ export const metadata = {
     default: 'Applicco - Criadora de Aplicativos e Softwares',
   },
   description: "Desenvolvedora de aplicativos, websites, softwares e outros produtos digitais.",
-  openGraph: {
-    url: 'https://applicco.com.br',
-    locale: 'pt-BR',
-    type: 'website',
-  },
 }
 
 import Header from "../components/header"
