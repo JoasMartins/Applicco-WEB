@@ -13,6 +13,14 @@ export const metadata = {
     default: 'Applicco - Criadora de Aplicativos e Softwares',
   },
   description: "Desenvolvedora de aplicativos, websites, softwares e outros produtos digitais.",
+  images: [
+    {
+      url: 'https://imgur.com/7DQOLBg.png',
+      width: 50,
+      height: 50,
+      alt: "Logo Applicco",
+    },
+  ],
 }
 
 import Header from "../components/header"
