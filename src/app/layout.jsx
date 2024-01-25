@@ -1,5 +1,4 @@
-
-
+import { Analytics } from '@vercel/analytics/react';
 import { Rubik } from 'next/font/google'
 import './globals.css'
 //import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,6 +22,7 @@ export default function RootLayout({ children }) {
         <Header/>
         {children}
         <Footer/>
+        <Analytics />
       </body>
     </html>
   )
