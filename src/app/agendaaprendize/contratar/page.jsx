@@ -7,7 +7,15 @@ import Buttons from "./Buttons";
 
 export const metadata = {
     title: "Contratar - Agenda Aprendize",
-    description: "Solicitar o app para ser usado em alguma escola."
+    description: "Solicitar o app para ser usado em alguma escola.",
+    images: [
+        {
+            url: 'https://imgur.com/ESY1Jk1.png',
+            width: 50,
+            height: 50,
+            alt: "Logo Agenda Aprendize",
+        },
+    ],
 }
 
 export default function PageContratar() {
@@ -96,7 +104,7 @@ export default function PageContratar() {
                     <p className="title">Esse é um projeto desenvolvido por:</p>
                     <Image src="/appliccoBanner.png" className="appliccoLogo" alt="Logo da Applicco" height={100} width={300} />
                     <div className="buttons">
-                        
+
 
                         {/*
                         <button onClick={handleContactAPC}>
