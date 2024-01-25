@@ -17,7 +17,7 @@ export const metadata = {
     url: 'https://applicco.com.br',
     images: [
       {
-        url: 'https://imgur.com/7DQOLBg.png',
+        url: '%s',
         width: 50,
         height: 50,
         alt: "Logo Applicco",

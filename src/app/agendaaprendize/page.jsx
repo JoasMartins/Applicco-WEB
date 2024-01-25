@@ -15,14 +15,8 @@ import ButtonDownload from './ButtonDownload';
 export const metadata = {
     title: "Projeto: Agenda Aprendize",
     description: "Aplicativo de gerenciamento de atividades escolares.",
-    images: [
-        {
-          url: 'https://imgur.com/ESY1Jk1.png',
-          width: 50,
-          height: 50,
-          alt: "Logo Agenda Aprendize",
-        },
-      ],
+    images: 'https://imgur.com/ESY1Jk1.png',
+    
 }
 
 function Index() {
