@@ -6,19 +6,6 @@ import ButtonsHome from "@/components/ButtonsHome"
 
 export const metadata = {
   description: "Equipe especializada em criação de aplicativos, websites, softwares entre outros produtos digitais.",
-  openGraph: {
-    url: 'https://applicco.com.br',
-    images: [
-      {
-        url: 'https://imgur.com/7DQOLBg.png',
-        width: 50,
-        height: 50,
-        alt: "Logo Applicco",
-      },
-    ],
-    locale: 'pt-BR',
-    type: 'website',
-  },
 }
 
 export default function Page() {

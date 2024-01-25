@@ -6,7 +6,8 @@ import Image from "next/image";
 import Buttons from "./Buttons";
 
 export const metadata = {
-    title: "Contratar - Agenda Aprendize"
+    title: "Contratar - Agenda Aprendize",
+    description: "Solicitar o app para ser usado em alguma escola."
 }
 
 export default function PageContratar() {

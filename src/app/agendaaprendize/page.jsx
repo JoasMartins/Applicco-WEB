@@ -13,7 +13,8 @@ import Link from 'next/link';
 import ButtonDownload from './ButtonDownload';
 
 export const metadata = {
-    title: "Projeto: Agenda Aprendize"
+    title: "Projeto: Agenda Aprendize",
+    description: "Aplicativo de gerenciamento de atividades escolares."
 }
 
 function Index() {
