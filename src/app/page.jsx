@@ -11,15 +11,9 @@ export const metadata = {
     images: [
       {
         url: 'https://imgur.com/7DQOLBg.png',
-        width: 800,
-        height: 600,
+        width: 200,
+        height: 200,
         alt: "Logo Applicco",
-      },
-      {
-        url: 'https://nextjs.org/og-alt.png',
-        width: 1800,
-        height: 1600,
-        alt: 'My custom alt',
       },
     ],
     locale: 'pt-BR',
