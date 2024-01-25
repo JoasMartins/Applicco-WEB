@@ -6,6 +6,25 @@ import ButtonsHome from "@/components/ButtonsHome"
 
 export const metadata = {
   description: "Equipe especializada em criação de aplicativos, websites, softwares entre outros produtos digitais.",
+  openGraph: {
+    url: 'https://applicco.com.br',
+    images: [
+      {
+        url: 'https://imgur.com/7DQOLBg.png',
+        width: 800,
+        height: 600,
+        alt: "Logo Applicco",
+      },
+      {
+        url: 'https://nextjs.org/og-alt.png',
+        width: 1800,
+        height: 1600,
+        alt: 'My custom alt',
+      },
+    ],
+    locale: 'pt-BR',
+    type: 'website',
+  },
 }
 
 export default function Page() {
@@ -13,10 +32,6 @@ export default function Page() {
     <main className={styles.main}>
       <Head>
         <meta name="keywords" content="applicco, aplico, applico, aplicco, app, licco, app licco, aplicativo, software, site, website, agenda aprendize, agenda patrus"></meta>
-        <meta property="og:title" content="Applicco - Aplicativos e Softwares"></meta>
-        <meta property="og:description" content="Equipe especializada em criação de aplicativos, websites, softwares entre outros produtos digitais."></meta>
-        <meta property="og:url" content="https://applicco.com.br"></meta>
-        <meta property="og:image" content="https://imgur.com/7DQOLBg.png"></meta>
       </Head>
       <div className={styles.header}>
         <div>
