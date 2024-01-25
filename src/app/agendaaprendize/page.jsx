@@ -15,13 +15,19 @@ import ButtonDownload from './ButtonDownload';
 export const metadata = {
     title: "Projeto: Agenda Aprendize",
     description: "Aplicativo de gerenciamento de atividades escolares.",
-    images: {url: 'https://imgur.com/ESY1Jk1.png'},
-    
+    images: [
+        {
+            url: 'https://imgur.com/ESY1Jk1.png',
+            width: 50,
+            height: 50,
+            alt: "Logo Agenda Aprendize",
+        },
+    ],
 }
 
 function Index() {
 
-    
+
 
     const handleDownload = () => {
         const apkFileName = appData.apkname;
@@ -55,12 +61,12 @@ function Index() {
                                 <p>Ao contratar o Agenda Aprendize para a sua escola, o nome do app será mudado para o do seu colégio, assim como sua foto, suas cores e tudo oque está associado a identidade visual, fazendo com que o seu app seja 100% desvínculado a E. E. Sebastião Patrus de Souza.</p>
                                 <p>Aperte o botão ao lado para contratar o aplicativo.</p>
                             </div>
-                            <Link href={"/agendaaprendize/contratar"} style={{textDecoration: "none"}}>
-                            <button className='areaActionButton'>
-                                <FontAwesomeIcon icon={faHandshake} className='iconButton' />
-                                <div className='barraDivisoria' />
-                                <p>Contratar</p>
-                            </button>
+                            <Link href={"/agendaaprendize/contratar"} style={{ textDecoration: "none" }}>
+                                <button className='areaActionButton'>
+                                    <FontAwesomeIcon icon={faHandshake} className='iconButton' />
+                                    <div className='barraDivisoria' />
+                                    <p>Contratar</p>
+                                </button>
                             </Link>
                         </div>
 
@@ -71,7 +77,7 @@ function Index() {
                                 <p>Certifique-se de que nas configurações do seu dispositivo a opção esteja ativada. Não sabe como ativar? <a href='https://www.showmetech.com.br/instalando-aplicativos-android-de-fontes-desconhecidas/' target="_blank" rel="noopener noreferrer">Clique aqui</a>.</p>
                             </div>
                             <div className="alert">
-                                <ButtonDownload/>
+                                <ButtonDownload />
                                 <p className='text1'>Download indisponível!</p>
                                 <p className='text2'>Aplicativo ainda não foi lançado.</p>
                             </div>

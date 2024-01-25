@@ -2,7 +2,15 @@ import styles from "./css/Not-Found.module.css"
 import Image from "next/image"
 
 export const metadata = {
-    title: "404 - Página não encontrada"
+    title: "404 - Página não encontrada",
+    images: [
+        {
+          url: 'https://imgur.com/7DQOLBg.png',
+          width: 50,
+          height: 50,
+          alt: "Logo Applicco",
+        },
+      ],
 }
 
 export default function Page() {

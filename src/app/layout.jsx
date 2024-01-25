@@ -15,14 +15,6 @@ export const metadata = {
   description: "Desenvolvedora de aplicativos, websites, softwares e outros produtos digitais.",
   openGraph: {
     url: 'https://applicco.com.br',
-    images: [
-      {
-        url: '%s',
-        width: 50,
-        height: 50,
-        alt: "Logo Applicco",
-      },
-    ],
     locale: 'pt-BR',
     type: 'website',
   },
@@ -37,9 +29,9 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
 
       <body className={font.className}>
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
         <Analytics />
       </body>
     </html>
