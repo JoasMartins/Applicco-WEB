@@ -171,13 +171,15 @@ function Index() {
                     color="#5e86ff"
                 />
 
-                <div className='main_areaInfo'>
-                    <div>
-                        <Image src={"/info.svg"} width={30} height={30} alt="ícone de Informação" />
-                        <p>Aviso!</p>
+                <div className='main_areaInfoDiv'>
+                    <div className='main_areaInfo'>
+                        <div>
+                            <Image src={"/info.svg"} width={30} height={30} alt="ícone de Informação" />
+                            <p>Aviso!</p>
+                        </div>
+                        <p className='destaque'>Este aplicativo não foi criado nem solicitado pela equipe da secretaria ou direção da escola!</p>
+                        <p className='nao_destaque'>Portanto, quaisquer erros, falhas ou problemas no aplicativo não devem ser reportados a eles, mas sim ao desenvolvedor do aplicativo.</p>
                     </div>
-                    <p className='destaque'>Este aplicativo não foi criado nem solicitado pela equipe da secretaria ou direção da escola!</p>
-                    <p className='nao_destaque'>Portanto, quaisquer erros, falhas ou problemas no aplicativo não devem ser reportados a eles, mas sim ao desenvolvedor do aplicativo.</p>
                 </div>
             </main>
         </div>

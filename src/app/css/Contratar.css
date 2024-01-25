@@ -20,12 +20,12 @@
 .ContratarPage .main h1 {
     font-size: 3.5rem;
     color: var(--color-text);
-    width: 40%;
+    width: 60%;
     text-align: center;
 }
 
 .ContratarPage .main h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--color-discreto);
     width: 50%;
     text-align: center;
@@ -150,8 +150,8 @@
 }
 
 .ContratarPage .textsInfo p {
-    font-size: 14px;
-    max-width: 40vw;
+    font-size: 1.6rem;
+    max-width: 80%;
 }
 
 .ContratarPage .contratar {
@@ -263,4 +263,79 @@
     background-color: var(--color-text-6);
     margin-left: 10px;
     margin-right: 10px;
+}
+
+
+/* <==================> RESPONSIDADE <==================> */
+@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+
+}
+
+@media screen and (max-width: 1024px) {/* MIN DESKTOP */
+
+}
+
+@media screen and (max-width: 768px) {/* TABLET */
+    .main {
+        padding: 6px;
+    }
+
+    .ContratarPage .main h1 {
+        width: 100%;
+    }
+
+    .ContratarPage .main h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .ContratarPage .main .textsInfo h3, .ContratarPage .contratar h3 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .ContratarPage .main .textsInfo p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .ContratarPage .textsInfo {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 70px 0px;
+    }
+
+    .ContratarPage .main .textsInfo .texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ContratarPage .contratar {
+        margin: 15px;
+    }
+
+    .ContratarPage .contratar p {
+        font-size: 2rem;
+        width: 80%;
+    }
+
+
+    .ContratarPage .actions {
+        flex-direction: column;
+    }
+
+    .ContratarPage .actions .buttonArea {
+        margin: 10px 0px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {/* EXCESSAO ------ */
+
+}
+
+@media screen and (max-width: 320px) {/* MOBILE */
+
 }

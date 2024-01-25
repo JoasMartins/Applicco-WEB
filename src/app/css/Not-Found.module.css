@@ -12,9 +12,6 @@
     align-items: center;
 }
 
-.main .box div {
-    min-width: 40vw;
-}
 
 .main img {
     height: 50vh;
@@ -22,10 +19,47 @@
 
 .main h1 {
     color: var(--color-text-1);
-    font-size: 80px;
+    font-size: 8rem;
 }
 
 .main p {
     color: var(--color-text-3);
-    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+/* <==================> RESPONSIDADE <==================> */
+@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+
+}
+
+@media screen and (max-width: 1024px) {/* MIN DESKTOP */
+
+}
+
+@media screen and (max-width: 768px) {/* TABLET */
+    .main .box {
+        flex-direction: column;
+    }
+
+    .main h1 {
+        font-size: 6rem;
+    }
+    
+    .main p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {/* MOBILE */
+    .main img {
+        height: 250px;
+    }
+
+    .main h1 {
+        font-size: 4rem;
+    }
+    
+    .main p {
+        font-size: 1.7rem;
+    }
 }

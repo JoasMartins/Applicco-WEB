@@ -3,14 +3,19 @@
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./css/Header.module.css"
 import Link from "next/link"
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import Dropdown from 'react-bootstrap/Dropdown';
 //import DropdownButton from 'react-bootstrap/DropdownButton';
 //import { DropdownItemText } from "react-bootstrap";
 //import DropdownItem from 'react-bootstrap/DropdownItem'
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Sidebar from "./Sidebar/sidebar";
 
 export default function Page() {
+    const [openedSidebar, setOpenedSidebar] = useState(true)
+
     const router = useRouter()
 
     function handleAgendaAprendize() {
@@ -21,6 +26,10 @@ export default function Page() {
         window.open("mailto:contato@applicco.com.br?subject=Solicitação de Serviço")
     }
 
+    function handleSidebar() {
+        setOpenedSidebar(!openedSidebar)
+    }
+
     return (<header className={styles.style}>
         <Link href={"/"} style={{ textDecoration: "none" }}>
             <div className={styles.logo}>
@@ -28,7 +37,7 @@ export default function Page() {
             </div>
         </Link>
 
-        <nav className={styles.nav}>
+        <nav className={styles.nav} id="show">
             {
                 /**
                  <DropdownButton id="dropdown-projects" title="Projetos">
@@ -40,7 +49,7 @@ export default function Page() {
             }
 
             <Link href="/agendaaprendize" style={{ textDecoration: "none" }}>
-                <div style={{marginBottom: 10}}>
+                <div style={{ marginBottom: 10 }}>
                     <p>Projeto:</p>
                     <h4>Agenda Aprendize</h4>
                 </div>
@@ -56,5 +65,11 @@ export default function Page() {
 
 
         </nav>
+
+        <nav className={styles.navHidden} id="hidden" onClick={handleSidebar}>
+            <FontAwesomeIcon icon={faBars} color="#fff" className={styles.iconSidebar} />
+        </nav>
+
+        <Sidebar opened={openedSidebar} func={setOpenedSidebar} />
     </header>)
 }

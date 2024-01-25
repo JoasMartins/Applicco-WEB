@@ -16,7 +16,7 @@ export default function Page() {
             <div className={styles.services}>
                 <div className={styles.logo}>
                     <div>
-                        <Image src='applicco-logo.svg' alt='Ícone da Applicco' />
+                        <Image src='applicco-logo.svg' alt='Ícone da Applicco' height={60} width={60} />
                         <h1>Applicco</h1>
                     </div>
                     <p>Aplicativos e Softwares</p>

@@ -34,7 +34,7 @@ export default function Page() {
           <p>Somos uma equipe de criação de <span>Websites</span>, <span>Aplicativos Mobile</span>, <span>Chatbots</span> e aquilo que você precisa para revoluncionar o seu negócio.</p>
         </div>
         <div align="center">
-          <div align="center"><Image src="/dev-ia.svg" alt="Humano interagindo com bot num celular" /></div>
+          <div align="center"><Image src="/dev-ia.svg" alt="Humano interagindo com bot num celular" height={440} width={440} className="Image" /></div>
           <div align="center"><button onClick={handleModalRequestService}>Solicitar serviço</button></div>
         </div>
       </div>

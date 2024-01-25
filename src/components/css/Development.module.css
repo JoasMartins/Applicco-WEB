@@ -4,19 +4,45 @@
     align-items: center;
     background-color: var(--color-background);
     text-align: center;
+    padding: 5px;
 }
 
 .main h1 {
     color: var(--color-text-1);
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .main p {
     color: var(--color-text-3);
-    font-size: 13px;
+    font-size: 1.5rem;
 }
 
 .main span {
     color: var(--color-2);
     font-weight: bold;
+}
+
+
+
+/* <==================> RESPONSIDADE <==================> */
+@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+
+}
+
+@media screen and (max-width: 1024px) {/* MIN DESKTOP */
+
+}
+
+@media screen and (max-width: 768px) {/* TABLET */
+    .main h1 {
+        font-size: 3rem;
+    }
+    
+    .main p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {/* MOBILE */
+
 }

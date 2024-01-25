@@ -7,14 +7,14 @@
     padding-bottom: 80px;
 }
 
-.SessionHome div {
-}
 
-.SessionHome h3 {
+
+.SessionHome .texts {
+    width: 100%;
 }
 
 .SessionHome p {
-    font-size: 16px;
+    font-size: 19px;
 }
 
 .SessionHome .title {
@@ -32,9 +32,53 @@
     font-size: 15px;
 }
 
-@media (max-width: 1024px) {
-    .SessionHome {
+/* <==================> RESPONSIDADE <==================> */
+@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+
+}
+
+@media screen and (max-width: 1024px) {/* MIN DESKTOP */
+
+}
+
+@media screen and (max-width: 768px) {/* TABLET */
+    .custom3, .custom1 {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .SessionHome {
+        flex-direction: column !important;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .SessionHome .texts {
+        width: 90% !important;
+    }
+
+    .SessionHome h3, .SessionHome p, .SessionHome h4 {
+        text-align: center;
+    }
+
+    .SessionHome ul {
+        margin-top: 20px;
+    }
+
+    .SessionHome .title {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SessionHome .image {
+        margin: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 320px) {/* MOBILE */
+
 }

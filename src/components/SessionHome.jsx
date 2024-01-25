@@ -20,12 +20,12 @@ export default function SessionHome({ title, text, image, color, direction, cust
     if (!text) {
         if (custom == 1) {
             largura = "50%"
-            text = (<div>
+            text = (<div className={style.custom1}>
                 <p>As tarefas são exibidas em três sessões e divididas com o tempo restante até o prazo final de cada atividade, esses campos são:</p>
                 <ul style={{marginLeft:"20px" }}>
-                    <li><p><span style={{ fontWeight: "bold" }}>&ldquo;Hoje&ldquo;</span> para tarefas do dia atual;</p></li>
-                    <li><p><span style={{ fontWeight: "bold" }}>&ldquo;Uma semana&ldquo;</span> para tarefas nos próximos 7 dias;</p></li>
-                    <li><p><span style={{ fontWeight: "bold" }}>&ldquo;Próximos&ldquo;</span> para todas as demais tarefas para depois dos próximos 7 dias.</p></li>
+                    <li><span style={{ fontWeight: "bold" }}>&ldquo;Hoje&ldquo;</span> para tarefas do dia atual;</li>
+                    <li><span style={{ fontWeight: "bold" }}>&ldquo;Uma semana&ldquo;</span> para tarefas nos próximos 7 dias;</li>
+                    <li><span style={{ fontWeight: "bold" }}>&ldquo;Próximos&ldquo;</span> para todas as demais tarefas para depois dos próximos 7 dias.</li>
                 </ul>
             </div>)
         }
@@ -40,7 +40,8 @@ export default function SessionHome({ title, text, image, color, direction, cust
         }
 
         if (custom == 3) {
-            text = (<div>
+            largura = "58%"
+            text = (<div className={style.custom3}>
                 <p>Sistema de Notificações elaborado para lembrar constantemente cada aluno das tarefas atribuídas a ele que estão se aproximando. Oferecemos 10 tipos de notificações, e cada aluno tem a opção de habilitar ou desabilitar de acordo com suas preferências. As notificações incluem:</p>
                 <ul style={{marginLeft:"20px" }}>
                     <li>Aviso quando uma tarefa é criada;</li>
@@ -64,8 +65,8 @@ export default function SessionHome({ title, text, image, color, direction, cust
                 <div style={{ display: "flex", alignItems: "center", backgroundColor: "#4071ff", padding: 0, borderRadius: 10, border: "1px solid #9fb7ff", marginTop: 10 }}>
                     <Image src={"/info.svg"} width={40} height={40} style={{ margin: "10px" }} alt="ícone de Informação" />
                     <div>
-                        <h4>EM BREVE:</h4>
-                        <p style={{ fontSize: 12 }}>Os professores terão um menu com <span>apenas</span> as tarefas que eles lançaram, e organizadas para auxiliar cada professor no lançamento de suas matérias.</p>
+                        <h4 style={{textAlign: "start"}}>EM BREVE:</h4>
+                        <p style={{ fontSize: 12, textAlign: "start" }}>Os professores terão um menu com <span>apenas</span> as tarefas que eles lançaram, e organizadas para auxiliar cada professor no lançamento de suas matérias.</p>
                     </div>
                 </div>
             </div>)
@@ -119,8 +120,8 @@ export default function SessionHome({ title, text, image, color, direction, cust
             backgroundColor: color || "#fff",
             flexDirection: directImage
         }}>
-            <Image alt="Icone sobre o tópico" src={image} width={220} height={220} />
-            <div style={{ width: largura }}>
+            <Image alt="Icone sobre o tópico" src={image} width={220} height={220} className={style.image} />
+            <div style={{ width: largura }} className={style.texts}>
                 <div className={style.title}>
                     <h3>{title || "UNDEFINED"}</h3>
                     {textBadge ? <Badge text={textBadge} /> : <></>}

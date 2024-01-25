@@ -12,16 +12,14 @@
 
 .main .header h1 {
     color: var(--color-text-5);
-    font-size: 6vw;
+    font-size: 6rem;
     font-weight: bold;
 }
-
-
 
 .main .header h2 {
     color: #4b4b4b;
     width: 80%;
-    font-size: 24px;
+    font-size: 4rem;
 }
 
 .main .header p {
@@ -33,7 +31,7 @@
 
 
 .main img {
-    height: 440px;
+    width: 44vw;
 }
 
 .main .header button {
@@ -83,7 +81,7 @@
 
 .main .projectAA h2 {
     color: var(--color-text-1);
-    font-size: 35px;
+    font-size: 3.5rem;
 }
 
 .main .projectAA p {
@@ -122,7 +120,7 @@
 }
 
 .main .about h2 {
-    font-size: 3.3vw;
+    font-size: 3.5rem;
     font-weight: bold;
     color: var(--color-text-1);
 }
@@ -134,84 +132,32 @@
     color: var(--color-text-2);
 }
 
-@media screen and (max-width: 1020px) {
-    /* HEADER */
 
-    /*
-    
 
+
+
+@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+
+}
+
+@media screen and (max-width: 1024px) {/* MIN DESKTOP */
+    /* === HEADER === */
+    .main .header {
+        padding: 7vw;
+    }
+/*
     .main .header h1 {
-        font-size: 40px;
-        width: 100%;
+        font-size: 6vw;
     }
 
     .main .header h2 {
-        font-size: 25px;
-        width: 100%;
-    }
-
-    .main .header p {
-        font-size: 20px;
-        width: 100%;
-    }
-
-    .main .header img {
-        height: 90vw;
-    }
-
-    .main .header button {
-        transform: translateY(-100%);
-        width: 100%;
-        font-size: 20px;
-    }
-
-*/
-    /* PROJETO AGENDA APRENDIZE */
-    /*
-    .main .projectAA {
-        padding: 10vw;
-        flex-direction: column;
-        align-items: start;
-        
-    }
-
-    .main .projectAA div {
-        width: 100%;
-    }
-
-    .main .projectAA div h2 {
-        font-size: 36px;
-    }
-
-    .main .projectAA div p {
-        font-size: 20px;
-    }
-
-    .main .projectAA .buttonArea {
-        margin-top: 30px;
-    }
-
-*/
-
-    /* SOBRE O APPLICCO */
-    /*
-    .main .about {
-        padding: 10vw;
-    }
-
-    .main .about h2{
-        font-size: 36px;
-    }
-
-    .main .about p {
-        width: 100%;
-        font-size: 20px;
+        font-size: 4.5vw;
     }
     */
-}
 
-
-@media screen and (max-width: 320px) {/* MOBILE */
+    .main .header button {
+        width: 50%;
+    }
 
 }
 
@@ -225,27 +171,82 @@
 
     .main .header div {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
-
-@media screen and (max-width: 1024px) {/* MIN DESKTOP */
-    /* === HEADER === */
-    .main .header {
-        padding: 7vw;
-    }
 
     .main .header h1 {
-        font-size: 5vw;
+        color: var(--color-text-5);
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    
+    .main .header h2 {
+        color: #4b4b4b;
+        width: 80%;
+        font-size: 2.5rem;
+    }
+
+    .main .header div div img {
+        width: 90vw;
     }
 
     .main .header button {
-        width: 50%;
+        transform: translateY(-100%);
+        width: 40vw;
     }
 
+    .main .projectAA {
+        flex-direction: column;
+        padding: 3.5vw;
+    }
+
+    .main .projectAA div {
+        width: 90%;
+    }
+
+    .main .projectAA div button {
+        margin-top: 20px;
+    }
+
+    .main .projectAA .buttonArea {
+        width: 50%;
+    }
 }
 
-@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+@media screen and (max-width: 320px) {/* MOBILE */
+    .main .header div div img {
+        height: 90vw;
+    }
 
+    .main .header button {
+        transform: translateY(-60%);
+        width: 100%;
+    }
+
+    .main .projectAA {
+
+    }
+
+    .main .projectAA div button {
+        margin-bottom: 20px;
+    }
+
+    .main .projectAA .buttonArea {
+        width: 100%;
+    }
+
+    .main .about {
+        padding: 5vw;
+    }
+    
+    .main .about h2 {
+        font-size: 8vw;
+    }
+    
+    .main .about p {
+        font-size: 5vw;
+        width: 100%;
+    }
 }

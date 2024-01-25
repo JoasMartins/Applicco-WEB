@@ -44,7 +44,7 @@ export default function PageContratar() {
                 </div>
 
                 <div className="textsInfo">
-                    <div>
+                    <div className="texts">
                         <h3>Oque é contratar o Agenda Aprendize?</h3>
                         <p>Sua escola terá acesso ao aplicativo e ele será totalmente personalizado para o seu colégio. Cada escola que contrata o nosso projeto, terá um aplicativo exclusivo com a sua identidade visual e com os recursos padrão que o aplicativo oferece.</p>
                     </div>
@@ -55,7 +55,7 @@ export default function PageContratar() {
 
                 <div className="contratar">
                     <h3>Iniciar Contrato</h3>
-                    <p className="valor">O valor é conversado e definido ao entrar em contato conosco.<br />Para contratar nos mande um email, mensagem no whatsapp ou no instagram.</p>
+                    <p className="valor">O valor é conversado e definido ao entrar em contato conosco.<br />Para contratar nos mande um email, mensagem no WhatsApp ou no Instagram.</p>
                     <h4>Para contratar, <span>nos mande uma mensagem</span> através de um dos nossos meios de contato abaixo.</h4>
                 </div>
 
@@ -104,13 +104,13 @@ export default function PageContratar() {
 
                 <div className="dev">
                     <p className="title">Esse é um projeto desenvolvido por:</p>
-                    <Image src="/appliccoBanner.png" className="appliccoLogo" alt="Logo da Applicco" />
+                    <Image src="/appliccoBanner.png" className="appliccoLogo" alt="Logo da Applicco" height={100} width={300} />
                     <div className="buttons">
                         <button onClick={handleInstagramAPC}>
-                            <Image src="/instagram-logo.png" alt="ícone do Instagram" />
+                            <Image src="/instagram-logo.png" alt="ícone do Instagram" height={30} width={40} />
                             <p>Instagram</p>
                         </button>
-                        
+
                         {/*
                         <button onClick={handleContactAPC}>
                             <FontAwesomeIcon icon={faEnvelope} className="icon" />

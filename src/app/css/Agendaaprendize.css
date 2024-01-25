@@ -14,14 +14,14 @@
   .main_titleText {
     color: #dfdfdf;
     font-weight: bold;
-    font-size: 6.0rem;
+    font-size: 5.5vw;
     margin: 0px;
   }
   
   .main_subtitleText {
     color: #ACACAC;
     font-weight: bold;
-    font-size: 3.0rem;
+    font-size: 3.0vw;
     margin: 0px;
   }
   
@@ -210,15 +210,21 @@
   
   /*============================================================================*/
   
-  
-  .main_areaInfo {
-    background-color: #292929;
-    color: var(--color-text);
-    padding: 2.0rem;
-    display: block;
+  .main_areaInfoDiv {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 100px;
+    background-color: #292929;
+  }
+  
+  .main_areaInfo {
+    
+    color: var(--color-text);
+    padding: 2.0vw;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .main_areaInfo div {
@@ -233,7 +239,6 @@
     border-color: var(--color-default-secundario);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     width: 140px;
-    margin-left: 30px;
   }
   
   .main_areaInfo div p {
@@ -259,7 +264,7 @@
   }
 
 
-
+/*
   @media (max-width: 1024px) {
     .main_titleText {
       font-size: 5.0rem;
@@ -383,3 +388,53 @@
       font-size: 1.5rem;
     }
   }
+  */
+
+/* <==================> RESPONSIDADE <==================> */
+@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+
+}
+
+@media screen and (max-width: 1024px) {/* MIN DESKTOP */
+  .areaActions {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {/* TABLET */
+  .main_titleText {
+    font-size: 8.0vw;
+  }
+  
+  .main_subtitleText {
+    font-size: 5.0vw;
+  }
+
+  .areaActions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .areaActions .Hire, .areaActions .Download {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .areaActions button, .areaActions .alert {
+    margin: 3vw;
+  }
+
+  .Hire, .Download {
+    flex-direction: column;
+  }
+  
+  .main_areaInfo {
+    padding: 2.5vw;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 320px) {/* MOBILE */
+
+}

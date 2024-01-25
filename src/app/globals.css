@@ -80,11 +80,10 @@ main p {
   color: var(--color-text);
 }
 
-@media screen and (max-width: 320px) {/* MOBILE */
 
-}
 
-@media screen and (max-width: 768px) {/* TABLET */
+/* <==================> RESPONSIDADE <==================> */
+@media screen and (max-width: 1280px) {/* FULL DESKTOP */
 
 }
 
@@ -92,6 +91,10 @@ main p {
 
 }
 
-@media screen and (max-width: 1280px) {/* FULL DESKTOP */
+@media screen and (max-width: 768px) {/* TABLET */
+
+}
+
+@media screen and (max-width: 320px) {/* MOBILE */
 
 }
