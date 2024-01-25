@@ -5,7 +5,7 @@ import Head from "next/head"
 import ButtonsHome from "@/components/ButtonsHome"
 
 export const metadata = {
-  description: "Informações sobre a Equipe Applicco e links",
+  description: "Equipe especializada em criação de aplicativos, websites, softwares entre outros produtos digitais.",
 }
 
 export default function Page() {
@@ -16,6 +16,7 @@ export default function Page() {
         <meta property="og:title" content="Applicco - Aplicativos e Softwares"></meta>
         <meta property="og:description" content="Equipe especializada em criação de aplicativos, websites, softwares entre outros produtos digitais."></meta>
         <meta property="og:url" content="https://applicco.com.br"></meta>
+        <meta property="og:image" content="https://imgur.com/7DQOLBg.png"></meta>
       </Head>
       <div className={styles.header}>
         <div>

@@ -28,6 +28,7 @@
   .main_text {
     color: var(--color-text);
     font-size: 1.7rem;
+    padding: 10px;
   }
   
   .main_areaNotify {
@@ -432,6 +433,10 @@
   .main_areaInfo {
     padding: 2.5vw;
     display: flex;
+  }
+
+  .main_text {
+    text-align: center;
   }
 }
 

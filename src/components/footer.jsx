@@ -30,7 +30,7 @@ export default function Page() {
                     <div className={styles.barraDivisoriaVertical} />
                     <div>
                         <p>Contratar<br />Agenda Aprendize</p>
-                        <Link href={"/agendaaprendize/contratar/form"} style={{ textDecoration: "none" }}><button>Clique Aqui</button></Link>
+                        <Link href={"/agendaaprendize/contratar"} style={{ textDecoration: "none" }}><button>Clique Aqui</button></Link>
                     </div>
                 </div>
             </div>

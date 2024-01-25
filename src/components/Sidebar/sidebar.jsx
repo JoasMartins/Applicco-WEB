@@ -26,14 +26,14 @@ function Sidebar({ opened, func }) {
 
             <div className={styles.nav}>
                 <Link href="/agendaaprendize" style={{ textDecoration: "none" }}>
-                    <div>
+                    <div onClick={handleClosed}>
                         <p>Projeto:</p>
                         <h4>Agenda Aprendize</h4>
                     </div>
                 </Link>
 
                 <Link href="/portfolio" style={{ textDecoration: "none" }}>
-                    <div>
+                    <div onClick={handleClosed}>
                         <h4>Portfólio</h4>
                     </div>
                 </Link>
